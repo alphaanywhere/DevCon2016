@@ -1,0 +1,1591 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<META HTTP-EQUIV="MSThemeCompatible" content="Yes"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /> 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+<meta name="apple-mobile-web-app-capable" content="yes" />
+
+<style type="text/css">
+html { -webkit-tap-highlight-color: rgba(0,0,0,0); -webkit-user-select: none; -ms-touch-action: none;}
+.A5container {float:left;padding:0px;}
+.A5CWLayout {padding: 4px; float: left; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;}
+.A5GridHideErrorCol .A5GridErrorCol {display:none; }
+.A5GridRowErrorIcon {display:none;}
+.A5GridHasRowError .A5GridRowErrorIcon {display:inline;}
+.A5GridRowViewMode {display:block;}
+.A5GridRowEditMode {display:none;}
+.A5GridRowInEditMode .A5GridRowViewMode {display:none;}
+.A5GridRowInEditMode .A5GridRowEditMode {display:block;}
+.A5GridRowDirty {display:none;}
+.A5GridRowClean {display:inline;}
+.A5GridRowIsDirty .A5GridRowDirty {display:inline;}
+.A5GridRowIsDirty .A5GridRowClean {display:none;}
+.errorText {color:red;font-size:8pt;}
+.errorTextHighlight {font-weight:bold;font-size:8pt;}
+.errorTip {color:red;background:#fffafa url('a5images/boxsize8x8fillUp5FDiagonalWhite3A232552C2392C239.png');border:1px solid #f88;margin-top:2px;padding:2px;font-size:8pt;}
+.errorInput {color:red;border:1px solid red;margin:1px;}
+.errorInputHighlight {color:red;border:2px solid red;margin:0px;}
+.A5SelectedButton {opacity:.5;filter:alpha(opacity=50);}
+.A5InvisibleLock {background: rgba(0,0,0,0); }
+
+.A5AccordionTitleOn, .A5AccordionTitleOff, .A5AccordionTitleDisabled {display: block;border: 1px solid #999;padding: 2px;text-decoration: none;cursor: pointer;margin-bottom: 2px; padding: 2px}
+.A5AccordionPane {border: 1px solid #999;border-top: none;margin-bottom: 2px;margin-top: -2px;}
+.A5TabTopOn, .A5TabTopOff, .A5TabTopDisabled {display: block;float: left;border: 1px solid #999;border-bottom: none;margin-right: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabTopOn {margin-bottom: -1px;padding-bottom: 3px;}
+.A5TabBottomOn, .A5TabBottomOff, .A5TabBottomDisabled {display: block;float: left;border: 1px solid #999;margin-right: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabBottomOn {border-top: none;padding-top: 3px;}
+.A5TabLeftOn, .A5TabLeftOff, .A5TabLeftDisabled {display: block;border: 1px solid #999;margin-bottom: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabLeftOn {margin-right: -1px;padding-right: 3px;border-right: none;}
+.A5TabRightOn, .A5TabRightOff, .A5TabRightDisabled {display: block;border: 1px solid #999;border-left: none;margin-bottom: 2px;padding: 2px;text-decoration: none;cursor: pointer;}
+.A5TabRightOn {margin-left: -1px;padding-left: 3px;}
+.A5TabTopPane, .A5TabBottomPane, .A5TabLeftPane, .A5TabRightPane {border: 1px solid #999; padding: 2px;}
+
+
+.A5TabBand {border: 1px solid #999; padding: 0px;}
+.A5TabBandTabOn, .A5TabBandTabOff, .A5TabBandTabDisabled {position: relative;display: block;border: 1px solid #999;border-bottom: none;margin-right: 2px;margin-top: 2px;padding: 2px;text-decoration: none;cursor: pointer;white-space: nowrap;}
+.A5TabBandTabOn {margin-bottom: -1px;padding-bottom: 3px;}
+.A5TabBandSeparator {border: none;border-top: 1px solid #999;height: 3px;padding: 0px;font: 0pt arial;}
+.A5TabBandLeftScroll {position: relative;display: block;padding: 2px;margin-bottom: -1px;padding-bottom: 3px;text-decoration: none;border: 1px solid #999;border-left: none;border-bottom: none;}
+.A5TabBandRightScroll {position: relative;display: block;padding: 2px;margin-bottom: -1px;padding-bottom: 3px;text-decoration: none;border: 1px solid #999;border-right: none;border-bottom: none;}
+.A5TabBandTabDisabled, .A5TabTopDisabled, .A5TabLeftDisabled, .A5TabRightDisabled, .A5TabBottomDisabled, .A5AccordionTitleDisabled {opacity: .5; filter: alpha(opacity: 50)}
+.A5Window {-moz-border-radius: 3px; -webkit-border-radius: 3px;}
+.A5WindowLock{border: 1px solid #000;background: #222;opacity: .25;filter: alpha(opacity: 25);}
+
+.A5AccordionTitleOn:hover, .A5AccordionTitleOff:hover, .A5TabBandTabOff:hover, .A5TabTopOff:hover, .A5TabLeftOff:hover, .A5TabRightOff:hover, .A5TabBottomOff:hover{text-decoration: underline;}
+
+.A5MenuItem {text-decoration:none;}
+.A5DialogRSSeparator {border-top: 1px dotted #ccc; line-height:5px; margin-top: 5px;}
+.A5DialogRSFooter {margin-top: 10px;}
+
+
+
+
+
+
+</style>
+
+<link rel="stylesheet" type="text/css" href="css/iOS7/style.css">
+
+<style type="text/css">
+.titleTxt {
+	font-family: Arial;
+	font-size: 13px;
+	font-weight: bold;
+	color:#000080;
+}
+.pcHeader {
+	background-color:#bfcddb;
+}
+.blueBackBtn {
+	background-color: #3498db;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+	color: #ffffff;
+	box-shadow: none;
+	font-family: Arial;
+	font-size: 16px;
+	border: none;
+	margin-bottom:5px;
+	margin-left:5px;
+	width: 100px;
+	height: 40px;
+}
+.deleteRowInList {
+	background-color:#f5b6b6;
+}
+</style>
+<style>
+</style>
+
+<script src="phonegap.js"></script>
+
+
+<script type="text/javascript" src="javascript/a5.js"></script>
+<script type="text/javascript" src="javascript/a5_url.js"></script>
+
+<script type="text/javascript" src="css/iOS7/style.js"></script>
+<script type="text/javascript" src="javascript/A5jQueryWithUI.js"></script>
+
+<script>
+	if(typeof jQuery != 'undefined') jQuery.noConflict();
+</script>
+
+
+
+<script type="text/javascript" language="javascript">
+A5._windowDefaults={title:{tools:{defaults:{'close':{action:'close',name:'close',image:'a5images/windowbuttonclose.png'}}}}}
+A5.serverSideDateFormat = 'MM/dd/yyyy';
+</script>
+
+
+
+<script type="text/javascript" src="_phoneGapSettings.js"></script>
+
+</head>
+<body class="iOS7Page">
+<iframe style="display:none;" id="DLG1.__IFRAME1"></iframe>
+<input type="hidden" value="" id="DLG1.PARAMETERBUCKET"/>
+<input type="file" style="position:absolute; top:-1000px;visibility:hidden;" accept="image/*" id="DLG1._GETPHOTO"/><input type="file" style="position:absolute; top:-1000px;visibility:hidden;" name="files[]" multiple = "" id="DLG1._GETFILEMULTI"/><input type="file" style="position:absolute; top:-1000px;visibility:hidden;" name="files[]" id="DLG1._GETFILE"/><input type="hidden" id="DLG1.V.R1.LISTCOMPONENTS" name="V.R1.LISTCOMPONENTS" />
+
+<script type="text/javascript" language="javascript">
+
+A5.u.drag.useDragScrolling = 'auto';
+if(typeof DLG1_DlgObj == 'object') {
+	DLG1_DlgObj._destroy();
+	try {
+		delete DLG1_DlgObj;
+	} catch(e) {
+		DLG1_DlgObj = undefined;
+	}
+};
+;if(typeof DLG1_PanelObj != 'undefined') {
+	var ele = $(DLG1_PanelObj.getPanelId());
+	if(ele) {
+		if(ele.parentNode) ele.parentNode.removeChild(ele);
+	}
+	delete DLG1_PanelObj;
+}
+;window['DLG1_PanelObj'] = new A5.PanelNavigator([
+{
+	name: 'ROOT_PANELCARD',
+	src: new A5.PanelCard({
+	theme: 'iOS7',
+	body: {
+		content: {
+			type: 'html',
+			src: '<div \tid="DLG1.V.R1.C1"   \n\t\t\tclass="A5CWLayout "  style="width: 100%; "  >\n<div class="A5CWLayout" style="width: 85%" >\n\t<input\ttype="text" id="DLG1.V.R1.SEARCHTXT" title=""  autocapitalize="off"  autocorrect="off"     class="iOS7Edit" style="padding: 5px; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"  onkeyup="var searchFor = DLG1_DlgObj.getValue(\'searchTxt\'); var listObj = DLG1_DlgObj.getControl(\'LISTCOMPONENTS\'); listObj.filterListClientSide(searchFor);"   name="V.R1.SEARCHTXT"    value=""    />\n\n</div>\n<div class="A5CWLayout" style="width: " >\n\t<button type="button" id="DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS"    ></button>\n</div>\n<div style="font: 0pt arial;clear:both;"></div>\n\t</div>\n<br  id="DLG1.V.R1.C1.BREAK"  style="clear:both; " />\n<div \tid="DLG1.V.R1.C2"   \n\t\t\tclass="A5CWLayout "  style="width: 100%; height: 250px; "  >\n\n<div class="A5CWLayout" style="width: 2in" >\n\t\n<div  class="iOS7List"   style="padding:0px; "  >\n\t<div id="DLG1.V.R1.LISTCOMPONENTS.CONTROL"  class="DLG1_LISTCOMPONENTS" style="overflow: auto; width: 100%; "></div>\n</div>\n\n</div>\n<div style="font: 0pt arial;clear:both;"></div>\n\t</div>\n<br  id="DLG1.V.R1.C2.BREAK"  style="clear:both; " />\n<div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>'
+		},
+		scroll: {
+			axis: 'y',
+			stopPropogation: false,
+			pull: {
+				y: 'auto',
+				x: 'auto'
+			},
+			indicator: {
+				show: true,
+				h: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					left: '0px',
+					right: '0px'
+				},
+				v: {
+					show: true,
+					location: 'right',
+					offset: '0px',
+					top: '0px',
+					bottom: '0px'
+				}
+			}
+		}
+	},
+	header: {
+		html: '<div style="display:table; margin:auto;"><div class="A5CWLayout" style="width: " > \t<div id="DLG1.V.R1.STATICTEXT_1" title=""  class="titleTxt" style="box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;"   >Component List</div> </div> </div><div style="display:none;"></div>',
+		show: true,
+		className: 'pcHeader'
+	},
+	footer: {
+		html: '<div \tid="DLG1.V.R1.C3"    \t\t\tclass="A5CWLayout "  style="width: 33.33%; "  > <div class="A5CWLayout" style="width: 75px" > \t<button type="button" id="DLG1.V.R1.BUTTON_5"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> <div \tid="DLG1.V.R1.C4"    \t\t\tclass="A5CWLayout "  style="width: 33.33%; "  > <div style="display: table; margin: auto;"> <div class="A5CWLayout" style="width: 75px" > \t<button type="button" id="DLG1.V.R1.BUTTON_6"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> \t</div> <div \tid="DLG1.V.R1.C5"    \t\t\tclass="A5CWLayout "  style="width: 33.33%; "  > <div style="float: right;"> <div class="A5CWLayout" style="width: 75px" > \t<button type="button" id="DLG1.V.R1.BUTTON_4"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> \t</div> ',
+		show: true
+	},
+	overlay: {
+	},
+	onSize: function() {;
+if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LISTCOMPONENTS'); if(mObj) mObj.refresh();}}
+})
+},
+{
+	name: 'UXCONTAINER_PANELCARD',
+	src: new A5.PanelCard({
+	theme: 'iOS7',
+	body: {
+		content: {
+			type: 'html',
+			src: '<div style="clear: both; font: 0px arial; height: 0px; width: 0px;"></div>'
+		},
+		scroll: false
+	},
+	header: {
+		html: '<div style="display:none;"></div>'
+	},
+	footer: {
+		html: '<div style="display:table; margin:auto;"><div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_3"    ></button> </div> <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_7"    ></button> </div> </div>',
+		show: true
+	},
+	overlay: {
+	}
+})
+}
+],{
+	type: 'programmatic',
+	flow: 'ltr',
+	loopNavigate: false,
+	onPanelActivate: function() {DLG1_DlgObj.refreshClientSideComputations();},
+	onSize: function() {;if(typeof DLG1_DlgObj != 'undefined') {
+	if(typeof DLG1_DlgObj._findActiveLayoutRule != 'undefined') { 
+		DLG1_DlgObj._findActiveLayoutRule();
+	}
+}},
+	theme: 'iOS7',
+	header: {
+		show: false
+	},
+	footer: {
+	},
+	overlay: {
+	},
+	controls: {
+		prev: {
+			has: false
+		},
+		next: {
+			has: false
+		},
+		back: {
+			has: false
+		},
+		forward: {
+			has: false
+		}
+	},
+	body: {
+	},
+	animation: {
+		duration: 400
+	}
+})
+var ele = window['DLG1_PanelObj'].create('DLG1.R1');
+		var panelRootId = '';
+		var flagSizeToParent = true;
+		var wf_alias = 'DLG1';
+		if(panelRootId != '') { 
+			if (!$(panelRootId)) panelRootId = '';
+		}
+		if(panelRootId != '') { 
+			$(panelRootId).appendChild(ele);
+			if(flagSizeToParent) { 
+				window[wf_alias + '_PanelObj'].bindSize('parent');
+			}
+		} else { 
+			document.body.insertBefore(ele,document.body.firstChild);
+			window[wf_alias + '_PanelObj'].bindSize('window');
+		}
+DLG1_PanelObj._panelPath = {
+	ROOT_PANELCARD: 'ROOT_PANELCARD',
+	UXCONTAINER_PANELCARD: 'UXCONTAINER_PANELCARD'
+}
+DLG1_PanelObj._displayNames = {
+ROOT_PANELCARD : 'ROOT_PANELCARD',UXCONTAINER_PANELCARD : 'UXCONTAINER_PANELCARD',PGSHELLNAVIGATOR : 'PGSHELLNAVIGATOR'
+};
+if(typeof DLG1_DlgObj == 'object') DLG1_DlgObj._destroy();
+var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
+	ajaxURL: 'http://192.168.1.86/PGSHELL.a5wcmp?__virtualPage=__a5RunDialog.a5w&__dialogFilename=PGSHELL&__alias=DLG1&__unsaved=no',
+	_embeddedMode: false,
+	_livePreviewInBuilder: false,
+	componentGUID: '1d030ad1-9608-4800-b783-052235e7be24',
+	columnInfo: {'SEARCHTXT': {info: {controlType: 'Textbox'}, hiddenVal: false, type: 'input,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  },'LISTCOMPONENTS': {info: {controlType: 'List'}, hiddenVal: false, type: 'control', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }},
+	originalValues: [{
+	'SEARCHTXT': '',
+	'LISTCOMPONENTS': ''
+}],
+	defaultValues: {
+	SEARCHTXT: '',
+	LISTCOMPONENTS: ''
+},
+	datePickerMonthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
+	datePickerDayNames: ['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],
+	datePickerTodayButton: 'Today',
+	datePickerCloseButton: '',
+	datePickerFirstDayOfWeek: 1,
+	resetFormMessage: 'Are you sure you want to reset the form?',
+	resetFormTitle: 'Warning',
+	resetFormIcon: 'cssIcon=iOS7Icon iOS7IconHelp',
+	dirtyFormMessage: 'You must first save your changes or cancel changes by clicking the Reset button.',
+	dirtyFormTitle: 'Notice',
+	dirtyFormIcon: 'cssIcon=iOS7Icon iOS7IconInfo',
+	deleteRecordDialogTitle: 'Delete Record',
+	deleteRecordDialogMessage: 'Are you sure you want to delete this record?',	
+	ssDateFormat: 'MM/dd/yyyy',
+	styleName: 'iOS7',
+	_fieldHelpers_DIALOG2: [],
+	parentComponentAlias: '',
+	submitIfHasClientSideErrors: true, 
+	rowErrors: {
+				showMessageBox: false,
+				messageBoxTitle: 'Error',
+				style: 'color: red; width: 6in; height: 2in;'
+		},
+	fieldErrors: {
+		type: 'block', 
+		className: 'errorText',
+		inputClassName: 'iOS7EditError',
+		edit: { 
+			container: { className: 'iOS7EditBGError'}
+		},
+		icon: 'cssIcon=iOS7Icon iOS7IconError',
+		global: {
+			contId: 'DLG1.GLOBALERRORS',
+			hoverClassName: 'errorTextHighlight',
+			hoverInputClassName: 'errorInputHighlight'
+		}
+	},
+		onInitializeComplete: function(e) {
+initPhoneGapShell();
+setListHeight();
+		},
+		onPhoneGapReady: function(e) {
+window.onerror = function(err) { 
+	console.log('Unhandled Javascript Error:  ' + JSON.stringify(err));
+}
+StatusBar.overlaysWebView(false);
+StatusBar.styleDefault();
+setTimeout(function() { 
+    var pObj = DLG1_DlgObj.getPanelObject();
+    if (pObj) {
+    	 pObj.resize();
+    	 setListHeight();
+    }
+},100);
+		}
+	});
+DLG1_DlgObj._onOrientationChange =  function(e) { ;
+DLG1_DlgObj._findActiveLayoutRule();
+;  };
+A5.__componentObj = DLG1_DlgObj;
+DLG1_DlgObj._tabObjects = [];
+A5.loadJavascript('function setListHeight() {\n\tvar vp = AUI.u.getVPSize();\n\tvar _height = (vp.height - 140)+\'px\';\n\t$(\'DLG1.V.R1.C2\').style.height = _height;\n\t$(\'DLG1.V.R1.C2.CONTENTWRAPPER\').style.height = _height;\n}\n\nfunction showAddBtn() {\n\treturn DLG1_DlgObj._showDeleteBtn == false?true:false;\n}\n\nfunction showEditBtn() {\n\treturn DLG1_DlgObj._showDeleteBtn == false?true:false;\n}\n\nfunction showDoneBtn() {\n\treturn DLG1_DlgObj._showDeleteBtn == true?true:false;\n}\n\n\n\nfunction initPhoneGapShell(){\n\t_pgShell = {};\n\t_pgShell.uxPc = \'UXCONTAINER_PANELCARD\';\t\n\tDLG1_DlgObj._selectedComponent=\'\';\n\tDLG1_DlgObj._showDeleteBtn = false;\n\t\n\t\n\n\t_pgShell.getUxName = function() {\n\t\treturn \'_componentToLoad=\'+DLG1_DlgObj._selectedComponent;\n\t}\n\t\n\n\t_pgShell.loadSelectedUx = function(uxName) {\n\t\t_pgShell.loadUX(uxName);\n\t\tDLG1_DlgObj.panelSetActive(_pgShell.uxPc, true);\n\t}\n\t\n\n\t_pgShell.addComponentToList = function(resultObj) {\n\t\tvar uxName = resultObj.input1;\n\t\tvar btnIndex = resultObj.buttonIndex;\n\t\t\n\t\tvar l = DLG1_DlgObj.getControl(\'listComponents\');\n\t\tif (uxName.length > 0 && btnIndex == 1) { \n\t\t\tvar _d = [];\n\t\t\t_d.push({ ComponentName:  uxName });\n\t\t\tl.appendRows(_d);\n\t\t}\n\t}\n\t\n\n\t_pgShell.getComponentName = function() {\n\t\t\n\t\tif (typeof navigator.notification == \'undefined\') {\n\t\t\tvar uxName = prompt("UX Component Name","");\n\t\t\tif (uxName == null) {\n\t\t\t\treturn false;\n\t\t\t}\n\t\t\tvar resultObj = {};\n\t\t\tresultObj.input1 = uxName;\n\t\t\tresultObj.buttonIndex = 1;\n\t\t\t_pgShell.addComponentToList(resultObj);\n\t\t} else {\n\t\t\tnavigator.notification.prompt(\n\t\t\t\t\'UX Component Name\',  \t\t\t\t\t\n\t\t\t\t_pgShell.addComponentToList,\t\t\t\n\t\t\t\t\'Add UX Component Name To List\',\t\n\t\t\t\t[\'OK\',\'Cancel\'],\t\t\t\t\t\t\n\t\t\t\t\'\'\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t);\n\t\t}\n\t}\n\n\n\t_pgShell.verifySelectedUx = function(uxName) {\n\t\t\n\t\tDLG1_DlgObj._selectedComponent = uxName;\n\t\tif (A5.__flagWorkingPreview || DLG1_DlgObj._livePreviewInBuilder) {\n\t\t\tDLG1_DlgObj.runAction(\'verifyComponentExists\');\n\t\t} else {\n\t\t\t_pgShell.loadSelectedUx(uxName);\t\n\t\t}\n\t}\n\t\n\n\t_pgShell.gen_UUID = function() {\n\t var uuid = \'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx\'.replace(/[xy]/g, function(c) {\n    \t\t\tvar r = Math.random()*16|0, v = c == \'x\' ? r : (r&0x3|0x8);\n    \t\t\treturn v.toString(16);\n\t\t});\n\t\treturn uuid;\n\t}\n\t\t\n\n\t_pgShell.loadUX = function(uxName) {\n\t\t\n\t\tvar runMethod = \'ajax\';\n\t\tvar rowNum = 1;\n\t\tvar rowId = \'1\';\n\t\t\n\t\tif(runMethod == \'ajax\') {\n\t\t\tif(typeof DLG1_DlgObj._onlineStatus != \'undefined\') { \n\t\t\t\tif(DLG1_DlgObj._onlineStatus == \'offline\') { \n\t\t\t\t\t( function() {  }() );\n\t\t\t\t\tDLG1_DlgObj._executeEvent(\'onAjaxCallbackNotAvailable\', {xbasicFunctionName: \'\', ajaxEvent: \'OpenComponent\'})\n\t\t\t\t\treturn false;\n\t\t\t\t}\n\t\t\t}\t\t\n\t\t\n\t\t}\n\t\n\t\t$(\'panelId\').innerHTML = \'<div style=\\\'\\\'  id=\\\'GRIDDIV_panelId\\\'></div>\'; \n\t\tvar go = new Object();\n\t\n\t\tgo.ajaxFailedMessage = \'\';\n\t\tgo.ajaxCallbackTimeout = DLG1_DlgObj.ajaxCallbackTimeout;\n\t\tgo.objectId = _pgShell.gen_UUID();\n\t\t\n\t\tgo.dialog2Name = uxName;\n\t\tgo.type = \'dialog2\';\n\t\tgo.alias = \'DLG1_\'+uxName+\'_TTMX\';\n\t\tDLG1_DlgObj._currentChildAlias = go.alias;\n\t\t\n\t\t\n\t\tif(window[ go.alias.toUpperCase() + \'_DlgObj\']) { \n\t\t\twindow[ go.alias.toUpperCase() + \'_DlgObj\']._destroy();\n\t\t\n\t\t}\n\t\t\n\t\tgo.submitCurrentFieldValues = true;\n\t\tgo.sourceGridPart = \'O\';\n\t\tgo.sourceGridRowNumber = \'1\';\n\t\tgo.workingMessage = \'<img src=\\\'css/A5System/Images/wait.gif\\\' />Working...\';\n\t\tgo.placeholderValues = \'\';\n\t\tgo.argumentBinding = \'\';\n\t\n\t\tgo._thisGridAlias = DLG1_DlgObj.gridId;\n\t\tif(typeof DLG1_DlgObj.gridId != \'undefined\') go._thisGridAlias = DLG1_DlgObj.gridId;\n\t\tif(typeof DLG1_DlgObj.dialogId != \'undefined\') {\n\t\t\tgo._thisGridAlias = DLG1_DlgObj.dialogId;\n\t\t}\n\t\t\n\t\tgo._thisGridGUID = DLG1_DlgObj.componentGUID;\n\t\tgo._gridCurrentFilter = DLG1_DlgObj._gridFilter;\n\t\tgo._gridCurrentOrder = DLG1_DlgObj._gridOrder;\n\t\tgo._gridCurrentArguments = DLG1_DlgObj._gridArguments;\n\t\tgo._gridCurrentDBType = DLG1_DlgObj._gridDBType;\n\t\tgo.overrideSettings = \'Style_name = `iOS7`||Style_name = `iOS7`\'+\'||\';\n\t\tgo.a5_default_path = \'C_colon_|A5Webroot|livepreview\';\n\t\n\t\tvar panelId = DLG1_DlgObj.panelGetId(\'UXCONTAINER_PANELCARD\',\'body\');\n\t\tgo.dialog2Div = panelId;\n\t\tA5.component.runGenericComponent(go);\n\t}\n\t\n\t\n\t_pgShell.verifyFileExistsCallback = function() {\n\t\tif (DLG1_DlgObj._componentExists) {\n\t\t\t_pgShell.loadSelectedUx(DLG1_DlgObj._selectedComponent);\n\t\t} else {\t\n\t\t\talert(\'Error: \' + DLG1_DlgObj._selectedComponent + \'.a5wcmp does not exist.\');\n\t\t}\n\t}\n\t\n\t_pgShell.removeRow = function(rowNum) {\n\t\tvar lObj = DLG1_DlgObj.getControl(\'listComponents\');\n\t\tlObj.removeRows([rowNum]);\n\t}\n\t\n\t\n\t_pgShell.onSwipe = function(e,that) {\n\t\tif (e.swipeDirection == \'left\') {\n\t\t\tvar ele = that.containerId +\'.\'+e.rowNumber;\n\t\t\t$acn(ele,\'deleteRowInList\');\n\t\t\tvar deleteRow = confirm(\'Delete this row?\');\n\t\t\tif (deleteRow) {\t\n\t\t\t\tvar lObj = DLG1_DlgObj.getControl(\'listComponents\');\n\t\t\t\tlObj.removeRows([e.rowNumber]);\n\t\t\t} else {\n\t\t\t\t$rcn(ele,\'deleteRowInList\');\n\t\t\t}\n\t\t}\n\t}\n}',true);
+DLG1_DlgObj.fieldHelpers['SEARCHTXT'] = new A5.Edit({
+	watermark: {
+		text: 'Search'
+	}
+});
+DLG1_DlgObj.lookups = {
+};
+DLG1_DlgObj.dialogWatches['ENABLE_BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var enable = (dialog.listDetailView.LISTCOMPONENTS.isDirty == false);
+	var eles = $cetp($n('V.R' + data.rowNumber + '.BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS'),$('DLG1.R'+data.rowNumber));
+	if(typeof eles.length == 'undefined' || eles.length == 0) eles = [$('DLG1.'+'V.R' + data.rowNumber + '.BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS')];
+	var pObj = DLG1_DlgObj.getControl('BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS'); if(pObj) { if(typeof pObj.setDisabled != 'undefined') {  pObj.setDisabled(!enable,eles); return true;  } }
+	if(typeof DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS'] != 'undefined') {
+	DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS'].setDisabled(!enable,eles)
+	} else {
+	for(var i=0; i<eles.length;i++) eles[i].disabled = !enable;
+	}
+	;}
+}
+DLG1_DlgObj.dialogWatches['SHOWHIDE_BUTTON_5'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var showHide = '';
+	if( (showEditBtn() == true) == true ) showHide = '';
+	else showHide = 'none';	
+	if(showHide == 'none') {	
+		DLG1_DlgObj.setControlDisplay(''+'BUTTON_5'+'',false,'visibility',{type: '',duration: 0});
+	} else {
+		DLG1_DlgObj.setControlDisplay(''+'BUTTON_5'+'',true,'visibility',{type: 'preservespace',duration: 0});
+	}
+	}
+}
+DLG1_DlgObj.dialogWatches['SHOWHIDE_BUTTON_6'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var showHide = '';
+	if( (showDoneBtn() == true) == true ) showHide = '';
+	else showHide = 'none';	
+	if(showHide == 'none') {	
+		DLG1_DlgObj.setControlDisplay(''+'BUTTON_6'+'',false,'visibility',{type: '',duration: 0});
+	} else {
+		DLG1_DlgObj.setControlDisplay(''+'BUTTON_6'+'',true,'visibility',{type: 'preservespace',duration: 0});
+	}
+	}
+}
+DLG1_DlgObj.dialogWatches['SHOWHIDE_BUTTON_4'] = {
+		watch: [],
+		variables: [],
+		onChange: function(data) {
+	var dialog = {};
+	var summary = {};
+	DLG1_DlgObj._getDialogVariables(dialog,summary,data);
+	var showHide = '';
+	if( (showAddBtn() == true) == true ) showHide = '';
+	else showHide = 'none';	
+	if(showHide == 'none') {	
+		DLG1_DlgObj.setControlDisplay(''+'BUTTON_4'+'',false,'visibility',{type: '',duration: 0});
+	} else {
+		DLG1_DlgObj.setControlDisplay(''+'BUTTON_4'+'',true,'visibility',{type: 'preservespace',duration: 0});
+	}
+	}
+}
+DLG1_DlgObj.setStateInfo({
+	__dialogGuid: '0d036225-a6fa-4458-894d-3fd484624389',
+	argumentsBoundToCotrols: '',
+	__dtfmt: 'MM/dd/yyyy',
+	__tfmt: '',
+	__sgr: ''
+});
+DLG1_DlgObj._cascadingControls = [];
+DLG1_DlgObj._cascadingControlsChildren = [];
+DLG1_DlgObj.setStateInfo({ })
+A5.msgBox.theme = 'iOS7';
+A5.msgBox.buttonWidth = '1in';
+DLG1_DlgObj._defaultWindowTitleDirection = 'ltr';
+DLG1_DlgObj._controlContainers = {}
+DLG1_DlgObj._panelCardControls = {
+SEARCHTXT:'ROOT_PANELCARD',
+LISTCOMPONENTS:'ROOT_PANELCARD'
+}
+DLG1_DlgObj._buttons = {};
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS'] = new A5.Button({
+	layout: 'icon',
+	style: 'float: right; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	html: 'Clear',
+	icon: 'cssIcon=fa fa-times',
+	disabledIcon: 'cssIcon=fa fa-times',
+	onClick: function() { 
+},
+	theme: 'iOS7:base'
+});
+DLG1_DlgObj._buttons['BUTTON_5'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Edit',
+	onClick: function() { 
+},
+	theme: 'iOS7:base'
+});
+DLG1_DlgObj._buttons['BUTTON_6'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Done',
+	onClick: function() { 
+},
+	theme: 'iOS7:base'
+});
+DLG1_DlgObj._buttons['BUTTON_4'] = new A5.Button({
+	layout: 'text',
+	style: 'width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box; ',
+	html: 'Add',
+	onClick: function() { 
+},
+	theme: 'iOS7:base'
+});
+DLG1_DlgObj._buttons['BUTTON_3'] = new A5.Button({
+	layout: 'text',
+	style: 'height: 25px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	className: 'blueBackBtn',
+	html: 'Back',
+	onClick: function() { 
+},
+	theme: 'iOS7'
+});
+DLG1_DlgObj._buttons['BUTTON_7'] = new A5.Button({
+	layout: 'text',
+	style: 'height: 25px; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',
+	className: 'blueBackBtn',
+	html: 'Refresh',
+	onClick: function() { 
+},
+	theme: 'iOS7'
+});
+DLG1_DlgObj._buttons['BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS'].bind('DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS');
+DLG1_DlgObj._buttons['BUTTON_5'].bind('DLG1.V.R1.BUTTON_5');
+DLG1_DlgObj._buttons['BUTTON_6'].bind('DLG1.V.R1.BUTTON_6');
+DLG1_DlgObj._buttons['BUTTON_4'].bind('DLG1.V.R1.BUTTON_4');
+DLG1_DlgObj._buttons['BUTTON_3'].bind('DLG1.V.R1.BUTTON_3');
+DLG1_DlgObj._buttons['BUTTON_7'].bind('DLG1.V.R1.BUTTON_7');
+DLG1_DlgObj._listViewSettings['LISTCOMPONENTS'] = {
+	_dataSourceType: 'Static',
+	_listFields: [
+	{
+		name: 'ComponentName',
+		defaultValue: 'return this._controlDefaultValueForListField(\'ComponentName\');'
+	}
+],
+	_searchPartHas: true,
+	_searchPart: {
+		fieldMap: [
+	{
+		field: 'ComponentName',
+		control: ''
+	}
+]
+	},
+	_searchPartStyle: 'singlekeywordcontrol',
+	_keywordSearchFields: ['ComponentName'],
+	_keywordSearchControl: 'textbox1',
+	_searchFieldOptions: {
+"COMPONENTNAME" : {option: 2,qbf: false,type: 'c'}
+},
+	_showSearchDebugInfo: false,
+	_mediaFields: [],
+	_mediaTypes: {
+},
+	_phoneGap: {
+		mediaFiles: {
+			protectedRead: false,
+			target: 'server',
+			targetFilenameFunction: 'return \'<DeviceId>_\' +e.object.listFieldName + \'_\' + A5.ts() + \'_\' +e.name',
+			showProgress: false,
+			download: {
+				autodownloadFilesOnPullSynch: false,
+				deleteOrphansAfterSync: false,
+				targetFolder: '_AAFiles',
+				showProgress: false
+			},
+			onErrorFunction: function(array,fileNumber,error) { }
+		}
+	},
+	_dvmode: 'enter',
+	_hasDetailView: false,
+	theme: 'iOS7',
+	scroll: {
+		axis: 'y',
+		indicator: {
+			show: true,
+			h: {
+				show: true,
+				location: 'right',
+				offset: '0px',
+				left: '0px',
+				right: '0px'
+			},
+			v: {
+				show: true,
+				location: 'right',
+				offset: '0px',
+				top: '0px',
+				bottom: '0px'
+			}
+		},
+		momentum: {
+			allow: true
+		},
+		pull: {
+			y: 'auto',
+			x: 'auto'
+		}
+	},
+	layout: 'Default',
+	calculateValue: function(data) {  {var _val = '' +A5RemoveHTMLWrapper(data.ComponentName); if((_val == '' ||  _val == 'undefined'  )&& typeof data['*rowGUID'] != 'undefined') _val = '_temporaryValue_' + data['*rowGUID']; return _val;}},
+	listVariableName: 'LISTCOMPONENTS',
+	listVariableNameTrueCase: 'listComponents',
+	_hostComponentId: 'DLG1',
+	_includeCRC: false,
+	allParentLists: [],
+	onBeforeItemDraw: function(data,index) {
+data.deleteImg = function(data,index) { 
+if(DLG1_DlgObj._showDeleteBtn == true) {return A5.u.icon.html('cssIcon=fa fa-times fa-2x','id="DLG1.LISTCOMPONENTS.DELETEIMG.DIMG.{*row}"'); }
+return ''
+}(data,index);
+;
+;
+;},
+	__flagPersist: true,
+	__version: 1,
+	_beforePersistToStorage: function(obj) { 	this._executeEvent('onBeforePersistToLocalStorage',obj)
+	if(typeof obj.userData == 'undefined') obj.userData = {};
+	this.__userData = obj.userData;
+	//snapshot the list data in case the persist fails
+	this._dataSnapshot = [].concat(this._data);
+}
+,
+	persistToStorage: function(obj) { 	//system generated beforePersistToStorage code here
+	var result = DLG1_DlgObj.persistListToLocalStorage(this,obj);
+	delete this.__userData;
+	if(result) {
+		delete this._dataSnapshot;
+	} else { 
+		this.populate(this._dataSnapshot,false,false,false);  //need to .populate() without firing events
+		delete this._dataSnapshot;
+	}
+	obj.success = result
+	this._executeEvent('onPersistToLocalStorage',obj);
+	this._flagPersistDataOK = result;
+	//if persist to local storage after a server-side search fails, fire event
+	if(!result) { 
+		if(typeof this._tempFlagServerSideSearch != 'undefined') { 
+			if(this._tempFlagServerSideSearch) {
+				this._executeEvent('onSearchResultTooLargeForLocalStorage',obj);
+			}
+			delete this._tempFlagServerSideSearch;
+		}
+	}
+}
+,
+	onBeforePopulate: function(data) {if(!this._isInit && !this._restoringList) this._beforePersistToStorage({mode:'populate', data: data});
+},
+	onPopulate: function(data) {if(!this._isInit && !this._restoringList) {this.persistToStorage({mode:'populate', data: data});}},
+	onBeforeUpdateRow: function(index,data){this._beforePersistToStorage({mode:'update', data: data, index: index});},
+	onUpdateRow: function(index,data){this.persistToStorage({mode:'update', data: data, index: index});},
+	onBeforeAddRows: function(data,info){this._beforePersistToStorage({mode:'add', data: data});},
+	onAddRows: function(data,info){this.persistToStorage({mode:'add', data: data});},
+	onBeforeRemoveRows: function(rows){this._beforePersistToStorage({mode:'remove', rows: rows});},
+	onRemoveRows: function(rows){this.persistToStorage({mode:'remove', data: rows});},
+	onListDraw: function(data,startIndex) {var id = this.contId +'.NORECORDSINLIST';
+var e = $(this.contId + '.CONTENT');
+if(data.length == 0) {
+	var e = $(this.contId + '.CONTENT');
+	var eleHeight = ($(this.contId + '.CONTENTWRAPPER').offsetHeight /2 ) -12;
+	e.innerHTML = '<div id="'+id +'" style="text-align: center;padding-top: ' + eleHeight + 'px;">No records in list.</div>';
+} else {	
+	var ele = $(id);
+	if(ele) {
+		e.removeChild(ele);
+	}
+}
+if(A5.flags.isMobile) $e.add(this.contId+'.CONTENT','abstractdown',function(e) {$e.preventDefault(e);});},
+	onItemDraw: function(ele,data,index) {$e.add('DLG1.LISTCOMPONENTS.DELETEIMG.DIMG.'+arguments[2]+'',A5.d.evnts.click,Function('setTimeout(function() { DLG1_DlgObj.getControl(\'LISTCOMPONENTS\')._functions.button_deleteimg('+arguments[2]+');},1); $e.stopEvent(arguments[0]); return false;'));},
+	childLists: [],
+	childListEndpoints: ['LISTCOMPONENTS'],
+	_populateAllChildLists: function() { },
+	onSelect: function() {DLG1_DlgObj._listRowSelect('listComponents',this);
+;
+this._selectedRow = this.selection[0];},
+	onClick: function() {
+if (DLG1_DlgObj._showDeleteBtn == false) {
+	_pgShell.verifySelectedUx(this.value);
+}
+DLG1_DlgObj._listSystemOnClick('LISTCOMPONENTS',this.selection[0]);},
+	layouts: {
+		Default: {
+			type: 'template',
+			item: {
+			},
+			template: [
+				'<div style="display: table; width: 100%;">',
+				'\t<div style="display: table-cell;">',
+				'\t\t<div a5-item="deleteRow" class="iOS7ListItemLabelContext" style="float: right; color: red;">{deleteImg}</div>',
+				'\t\t<div class="iOS7ListItemLabelMain"><span id="DLG1.LISTCOMPONENTS.COMPONENTNAME.I.{*dataRow}">{ComponentName}</span></div>',
+				'\t</div>',
+				'\t',
+				'</div>'			
+]
+		}
+	},
+	content: {
+		header: {
+			show: false
+		},
+		footer: {
+			show: false
+		}
+	},
+	systemEvents: {
+		onTap: function(e) {},
+		afterAjaxCallback: function(e) {},
+		afterClientSideFilter: function(e) {},
+		beforeServerSideSort: function(e) {},
+		afterServerSideSort: function(e) {},
+		onSwipe: function(e) {},
+		onScroll: function(e) {},
+		onPullRelease: function(e) {},
+		onPull: function(e) {},
+		onPullEnd: function(e) {},
+		afterSearchComplete: function(e) {},
+		beforeSearch: function(e) {},
+		onSearchResultTooLarge: function(e) {},
+		onSearchResultTooLargeForLocalStorage: function(e) {},
+		onBeforePersistToLocalStorage: function(e) {},
+		onPersistToLocalStorage: function(e) {},
+		onRestoreFromLocalStorage: function(e) {},
+		afterRenderComplete: function(e) {},
+		beforeFetchMore: function(e) {},
+		afterFetchMore: function(e) {},
+		beforePageNavigate: function(e) {},
+		afterPageNavigate: function(e) {},
+		beforeRefreshRow: function(e) {},
+		afterRefreshRow: function(e) {},
+		afterServerSideSummaryCompute: function(summary) {},
+		_afterAjaxCallback: function() {this._refreshStateMessages();}
+	},
+	_clientsideSummary: [],
+	computeClientSideSummaryValues: function(e) {},
+	_executeEvent: function(event,obj) { 
+	return DLG1_DlgObj._list_executeEvent('LISTCOMPONENTS',event,obj);
+}
+,
+	_selectAll: function() {
+	var v = this._values;
+	var v2 = [].concat(v);
+	this.setValue(v2,false);
+}
+,
+	searchList: function() { 
+	if(this._searchPartStyle == 'querybyform') { 
+		if(this._dvmode != 'search') return false;
+	}
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		if(this.listIsDirty()) mode = 'clientside';
+		else {
+			if(this._dataSourceType.toLowerCase() == 'sql' || this._dataSourceType.toLowerCase() == 'dbf') {
+				mode = 'serverside';
+			} else { 
+				mode = 'clientside';
+			}
+		}
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'search', searchWhere: mode, listIsDirty: flagDirty});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._searchListServerSide(obj);
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilter();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'search', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_searchListServerSide: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var _d={};
+	var flagDirty = false;
+	if(this.listIsDirty) flagDirty = this.listIsDirty();
+	if(flagDirty) { 
+		alert('Can\'t execute server-side search because List has edits that have not yet been synchronized.');
+		return false;
+	}
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	_data = _data + '&' + A5.ajax.buildURLParam('__searchOptions',JSON.stringify(obj));
+	this.filter = false;
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPart','',_data);
+}
+,
+	clearSearchList: function() { 
+	var obj = typeof arguments[0] != 'undefined' ? arguments[0] : {};
+	var mode = 'serverSide';
+	if(typeof obj.searchMode != 'undefined') mode = obj.searchMode;
+	mode = mode.toLowerCase();
+	if(mode.indexOf('auto') == 0) { 
+		if(this.listIsDirty()) mode = 'clientside';
+		else mode = 'serverside';
+	}
+	if(this._dataSourceType.toLowerCase() == 'static') mode = 'clientside';
+	var parentList = this.parentList;
+	if(typeof parentList != 'undefined') {
+		if(parentList != '') mode = 'clientside';
+	}
+	var flagResult = DLG1_DlgObj._list_executeEvent(this.listVariableName,'beforeSearch',{searchMode: 'clear', searchWhere: mode});
+	if(!flagResult) return false;
+	if(mode == 'serverside') {
+		this._clearSearchListServerSide();
+	} else if(mode == 'clientside') { 
+		this._searchPartSubmit_clientSideFilterClear();
+		var rowCount = this._rData.length;
+		DLG1_DlgObj._list_executeEvent(this.listVariableName,'afterSearchComplete',{searchMode: 'clear', searchWhere: mode, recordsInQuery: rowCount});
+	}
+}
+,
+	_clearSearchListServerSide: function() { 
+	var _d={};
+	_d.listId = this.listVariableName
+	var _data = A5.ajax.buildURLParam('__searchInfo',JSON.stringify(_d));
+	DLG1_DlgObj.ajaxCallback('','','system:ListSearchPartClear','',_data);
+}
+,
+	_str: function(txt) {
+	txt = txt.replace("'","\\'");
+	txt = '\'' + txt + '\'';
+	return txt;
+}
+,
+	_QBF: function(txt) { 
+	var o = {};
+	o.v2 = '';
+	o.v1 = txt;
+	o.flag = false;
+	if(txt.indexOf('>=') >= 0) {
+		o.op = '>=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('<=') >= 0 ) { 
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if (txt.indexOf('>') >= 0 ) {
+		o.op = '>';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('<') >= 0)  { 
+		o.op = '<';
+		o.v1 = txt.substr(1);
+		o.flag = true;
+	} else if (txt.indexOf('..') == 0)  {
+		o.op = '<=';
+		o.v1 = txt.substr(2);
+		o.flag = true;
+	} else if ( txt.indexOf('..', txt.length - '..'.length) !== -1 ) { 
+		//ends with ..
+		o.op = '>=';
+		txt = txt.split('..')
+		o.v1 = txt[0];
+		o.flag = true;
+	} else if (txt.indexOf('..') > 0 ) {
+		o.op = 'between'
+		txt = txt.split('..');
+		o.v1 = txt[0];
+		o.v2 = txt[1];
+		o.flag = true;
+	}
+	return o;
+}
+,
+	_match: function(data,field,val,obj) { 
+	var flagKeyword = false;
+	if(typeof obj.flagKeyword != 'undefined') flagKeyword = obj.flagKeyword;
+	if(flagKeyword) { 
+		var obj_i = this._searchFieldOptions[field.toUpperCase()];
+		this._setSearchOps(obj,obj_i);
+	}
+	var _d = '';
+	var _v = val;
+	var flagC = false;
+	if(obj.type == 'c') {
+		flagC = true;
+		if(!obj.caseSensitive) _v = _v.toLowerCase();
+	} else { 
+		//non mumeric searches are only mode 1 or -1
+		if(obj.mode > 1) obj.mode = 1;
+		if(obj.mode < -1) obj.mode = -1;
+	}
+	var flag = false;
+	obj.usesQBFOperator = false;
+	if(obj.qbf) { 
+		_v = _v.split(',');
+	} else {
+		_v = [_v];
+	}
+	var o = {}
+	var r = '';
+	var _vals = [];
+	for(var i = 0; i < _v.length; i++) { 
+		if(obj.qbf) {
+			o = this._QBF(_v[i]);
+		} else {
+			o.flag = false;
+			o.v1 = _v[i];
+			o.v2 = '';
+		}
+		if(typeof data[field] != 'undefined') {
+			if(data[field] != null) { 
+				_d = data[field];
+				if(obj.type == 'n') { 
+					o.v1 = Number(o.v1);
+					o.v2 = Number(o.v2);
+					_d = Number(_d);
+				} else if (obj.type == 'l') { 
+					o.v1 = $u.s.toBool(o.v1);
+					o.v2 = $u.s.toBool(o.v2);
+					_d = $u.s.toBool(_d);
+				} else if (obj.type == 'd') { 
+					o.v1 = A5.stringToDate(o.v1,obj.dateFormat);
+					o.v2 = A5.stringToDate(o.v2,obj.dateFormat);
+					if(typeof _d == 'string') _d = A5.stringToDate(_d,obj.dateFormat);
+					if(o.v1 != '' && o.v1 != null ) o.v1 = o.v1.getTime();
+					if(o.v2 != '' && o.v2 != null ) o.v2 = o.v2.getTime();
+					if(_d != '' && _d != null ) _d = _d.getTime();
+				}
+				if(flagC) {if(!obj.caseSensitive && typeof _d == 'string') _d = _d.toLowerCase();}
+				if(o.flag) { 
+					//has qbf operators
+					if(o.op == 'between') {
+						if(flagC) {
+							if(_d.substr(0,o.v1.length) >= o.v1 && _d.substr(0,o.v2.length) <= o.v2 ) flag = true;
+						} else { 
+							if(_d >= o.v1 && _d <= o.v2 && (typeof _d == typeof o.v1)  ) flag = true;
+						}
+					} else { 
+						if(flagC) _d = _d.substr(0,o.v1.length)
+						if(o.op == '>=') if( _d >= o.v1) flag = true;
+						if(o.op == '<=') if( _d <= o.v1) flag = true;
+						if(o.op == '>') if(_d > o.v1) flag = true;
+						if(o.op == '<') if(_d < o.v1) flag = true;
+					}
+				} else { 
+					if(obj.mode == 1 || obj.mode == -1 ) {
+						if(obj.mode == 1) if(_d == o.v1) flag = true;; //match
+						if(obj.mode == -1) if(!(_d == o.v1)) flag = true;; //match
+					} else if (obj.mode == 2 || obj.mode == -2) { 
+						if(obj.mode == 2) if(_d.indexOf(o.v1) > -1) flag = true; //contains
+						if(obj.mode == -2) if(!(_d.indexOf(o.v1) > -1)) flag = true;
+					} else if (obj.mode == 3 || obj.mode == -3) { 
+						if(obj.mode == 3) if(_d.indexOf(o.v1) == 0) flag = true; //starts with
+						if(obj.mode == -3) if(!(_d.indexOf(o.v1) == 0)) flag = true; //starts with
+					}
+				}
+				if(o.v1 != '') {
+					if(_vals.indexOf(o.v1) == -1) { 
+						_vals.push(o.v1);
+					}
+				}
+				if(o.v2 != '') {
+					if(_vals.indexOf(o.v2) == -1) { 
+						_vals.push(o.v2);
+					}
+				}
+			}
+		}
+	}
+	if(flag) { 
+		if(typeof this._state.highlight == 'undefined') this._state.highlight = {};
+		this._state.highlight[field.toUpperCase()] = _vals;
+	} else { 
+		//this._state.highlight[field.toUpperCase()] = [];
+	}
+	return flag;
+}
+,
+	_setSearchOps: function(obj,obj_i) { 
+	obj.mode = obj_i.option;
+	obj.qbf = obj_i.qbf;
+	obj.type = obj_i.type;
+	//obj.treatAs = obj_i.treatAs;
+}
+,
+	_searchPartOperator: '&&',
+	_searchPartSubmit_clientSideFilter: function() { 
+	if(!this._searchPartHas) return true;
+	//_searchPartStyle: 'individualcontrols'
+	this._state.highlight = {};
+	if(this._searchPartStyle == 'singlekeywordcontrol') { 
+		var searchFor = DLG1_DlgObj.getValue(this._keywordSearchControl);
+		var arr = this._keywordSearchFields;
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		//obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 1;
+		obj.flagKeyword = true;
+		var objStr = JSON.stringify(obj)
+		for(var i = 0; i < arr.length; i++) { 
+			expn_i = 'this._match(data,' +this._str(arr[i]) + ',' + this._str(searchFor) + ','+objStr+')';
+			expn.push(expn_i);
+		}
+		expn = expn.join('||');
+		//alert(expn);
+	} else if ( this._searchPartStyle == 'individualcontrols' || this._searchPartStyle == 'querybyform'  ) { 
+		var map = this._searchPart.fieldMap;
+		var val = '';
+		var expn = [];
+		var expn_i = '';
+		var obj = {};
+		obj.caseSensitive = false;
+		//obj.qbf = true;
+		//obj.mode = 2;
+		//var objStr = JSON.stringify(obj)
+		var ac = [];
+		var aco = {};
+		var _highlight = {};
+		if(this._searchPartStyle == 'individualcontrols') {
+			for(var i = 0; i < map.length; i++) { 
+				val = DLG1_DlgObj.getValue(map[i].control);
+				if(val != '') {
+					obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+					this._setSearchOps(obj,obj_i);
+					expn_i = 'this._match(data,' +this._str(map[i].field) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+					expn.push(expn_i);
+				}
+			}
+		} else if (this._searchPartStyle == 'querybyform' ) { 
+			var controlName = '';
+			for(var i = 0; i < this._listFields.length; i++) { 
+				controlName = this._getUXDetailViewControlName(this._listFields[i].name);
+				if(controlName != '') {
+					val = DLG1_DlgObj.getValue(controlName);
+					if(val != '') {
+						obj_i = this._searchFieldOptions[map[i].field.toUpperCase()];
+						this._setSearchOps(obj,obj_i);
+						expn_i = 'this._match(data,' +this._str(this._listFields[i].name) + ',' + this._str(val) + ','+JSON.stringify(obj)+')';
+						expn.push(expn_i);
+						aco.control = controlName;
+						aco.value = val;
+						ac.push(aco);
+					}
+				}
+			}
+			this.__queryByFormValues = ac;
+			DLG1_DlgObj._setDVClean(this);
+		}	
+		var operator = '&&';
+		if(typeof this._searchPartOperator != 'undefined') operator = this._searchPartOperator;
+		expn = expn.join(' '+operator+' ');
+	} 
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = expn;
+	}
+	//user did not fill in any search fields
+	if(expn == '') return true;
+	var fnTxt = 'if(' + expn + ') {return true;} else { return false;}'
+	var searchFunction = new Function('data',fnTxt);
+	this.setFilter(searchFunction);
+	if(this._rData.length > 0) this.setValue(0);
+}
+,
+	_searchPartSubmit_clientSideFilterClear: function() { 
+if(!this._searchPartHas) return true;
+	this._state.highlight = {};
+	this.setFilter(false);
+	var map = this._searchPart.fieldMap;
+	var val = '';
+	var od = DLG1_DlgObj.originalValues[0];
+	for(var i = 0; i < map.length; i++) {
+		var val = od[map[i].control.toUpperCase()];
+		if(typeof val != 'undefined') DLG1_DlgObj.setValue(map[i].control,val,false);
+	}
+	this.setFilter(false);
+	delete this.__queryByFormValues;
+	DLG1_DlgObj._setDVClean(this);
+	if(this._data.length > 0) this.setValue(0);
+	if (this._showSearchDebugInfo) {
+		var ele = $('DLG1.V.R1.' + this._searchDebugPH);
+		if(ele) ele.innerHTML = '';
+	}
+}
+,
+	detailViewIsDirty: function() { return false; },
+	populateUXControls: function() { return true; },
+	listIsDirty: function() { return false; },
+	lookupValue: function(key,name,keyValue) {	var _d = this._data;
+	var indx = A5FindPropInArray(_d,key,keyValue);
+	var rv = '';
+	if(indx >=0) {
+		if(name == '__rowData__') return _d[indx];
+		rv =  _d[indx][name];
+	} else {
+		//null out all properties in row
+		var _d2 = {};
+		if(typeof _d[0] == 'undefined') { return {}} ;
+		for(var n in _d[0]) {
+			_d2[n] = '&nbsp;';
+		}
+		rv = _d2;
+	}
+	return rv;
+}
+,
+	allowNullSelection: true,
+	allowNullDeselection: false,
+	loopNavigate: false,
+	loopNavigateNullSelection: false,
+	refreshChildLists: function() {DLG1_DlgObj._listRefreshCascadingLists('LISTCOMPONENTS'); },
+	rowExpander: function(rowNumber) { 
+	var mode = typeof arguments[2] != 'undefined' ? arguments[2] : 'toggle';
+	if(typeof rowNumber == 'undefined' || rowNumber == '' ) {
+		rowNumber = this.selection[0];
+		if(typeof rowNumber == 'undefined') return false;
+	}
+	var animObj = typeof arguments[1] != 'undefined' ? arguments[1] : {};
+	var ele = $(this._hostComponentId + '.' + this.listVariableName + '.ROWEXPANDER.' + rowNumber);
+	if(ele) {
+		if(mode == 'toggle') A5.u.element.toggle(ele,animObj);
+		if(mode == 'show') A5.u.element.show(ele,animObj);
+		if(mode == 'hide') A5.u.element.hide(ele,animObj);
+	}
+}
+,
+	afterClientSideSummaryCompute: function(csSummary) { },
+	selectCurrentLayout: function(name) { 
+var pl = this.layouts[name];
+if(typeof pl == 'undefined') return false;
+this.setLayout(name);
+if(pl.type == 'column') {
+	this.columnLayout.header.show = this.layouts[name].showColumnTitles; 
+	this.refresh();
+}
+},
+	onFilter: function() { 	var e = {}; 
+	e.rowCount = this._values.length;  
+	var ele = $('DLG1.__listId__.RECORDCOUNT'); 
+	if(ele) {ele.innerHTML = e.rowCount;}; 
+	if(this.persistToStorage) { this.persistToStorage({});} 
+	(function(e) {   })(e);
+}
+,
+	serverSideSort: function(column) {
+var e = {};
+e.column = column;
+var result = this.systemEvents.beforeServerSideSort(e);
+if(result == false) return false;
+var obj = {};
+obj.cmd = 'sort';
+obj.column = column;
+obj.layoutName = this.layout;
+obj.listState = this._state;
+var data = '_listId=LISTCOMPONENTS&' + A5.ajax.buildURLParam('_cmdObj',$u.o.toJSON(obj));
+DLG1_DlgObj.ajaxCallback('','','system:listServerSideSort','',data);
+},
+	filterListClientSide: function(searchFor) {
+//var result = this.systemEvents.beforeClientSideFilter();
+//if(result == false) return false;
+if(searchFor != '') {
+	//fixes bug in Chrome when searching on dates strings that use forward slashes
+	searchFor = searchFor.replace(/\//g,'\\/');
+	this.setFilter({'ComponentName': RegExp('' + searchFor,'i')});
+} else this.setFilter(false);
+var rowCount = this._values.length;
+//var e = {};
+//e.rowCount = rowCount;
+//this.systemEvents.afterClientSideFilter(e);
+var ele = $('DLG1.listComponents.RECORDCOUNT');
+if(ele) ele.innerHTML = rowCount;
+}
+,
+	scrollToClosestValue: function(val) { 	
+	if(typeof val != 'string') val = val.join('');
+	var flagCI = typeof arguments[1] != 'undefined' ? arguments[1] : false;
+	var pos = typeof arguments[2] != 'undefined' ? arguments[2] : 'top';
+	var anim = typeof arguments[3] != 'undefined' ? arguments[3] : {}
+	var _d = this._rData;
+	var len = val.length;
+	var _d2;
+	var i2 = -1;
+	if(flagCI) val = val.toLowerCase();
+	for(var i = 0 ; i < _d.length; i++) {
+		i2 = i;
+		_d2 = String(_d[i]['*value']);
+		_d2 = _d2.substr(0,len);
+		_d2 = $u.s.pad(_d2,len,' ','l');
+		if(flagCI) _d2 = _d2.toLowerCase();
+		if(val <= _d2){
+			 break;
+		}
+	}
+	if(i2 > -1) { 
+		this.scrollToItem(i2,{mode: pos, animation: anim});
+	}
+}
+,
+	_refreshStateMessages: function() {
+	var ele = '';
+	ele = $('DLG1.LISTCOMPONENTS.PAGENUMBER');
+	if(ele) ele.innerHTML = this._state.page;
+	ele = $('DLG1.LISTCOMPONENTS.PAGECOUNT');
+	if(ele) ele.innerHTML = this._state.pageCount;
+	ele = $('DLG1.LISTCOMPONENTS.PAGECOUNT.PAGESELECTOR');
+	if(ele) ele.innerHTML = this._state.pageCount;	
+	ele = $('DLG1.LISTCOMPONENTS.LISTSTATE');
+	if(ele) {
+		var listState = $u.o.toJSON(this._state);
+		ele.innerHTML = listState;
+	}
+	//navigation buttons	
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_NEXT.LISTCOMPONENTS'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_LAST.LISTCOMPONENTS'];
+	if(ele) {
+		if(this._state.page == this._state.pageCount || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_FIRST.LISTCOMPONENTS'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = DLG1_DlgObj._buttons['BUTTON_LISTNAV_PREV.LISTCOMPONENTS'];
+	if(ele) {
+		if(this._state.page == 1 || this._state.pageCount == 0 ) ele.setDisabled(true);
+		else ele.setDisabled(false);
+	}
+	ele = $('DLG1.V.R1.A5SYSTEM_LIST_PAGESELECTOR_LISTCOMPONENTS');
+	if(ele) {
+		var data = this._recordNavigatorLinks;
+		if(data) A5.form.populateSelect(ele,this._state.page,data,true);
+	}
+}
+,
+	_functions: {
+		button_deleteimg: function(rowNumber,data) {var listObj = DLG1_DlgObj.getControl('listComponents'); var data = listObj.getData(rowNumber); var index = rowNumber;
+listObj.removeRows([rowNumber]);}
+	},
+	order: {'ComponentName' : 1},
+	_getRoute: function() { 
+	var obj  = typeof arguments[1] != 'undefined' ? arguments[1] : [];
+	var mode = typeof arguments[0] != 'undefined' ? arguments[0] : 'rowNumber'; //
+	if(typeof this.selection[0] == 'undefined') return false;
+	if(typeof this.getData(this.selection[0]) == 'undefined') return false;
+	if(mode == 'rowNumber') obj.push({list: this.listVariableName, row: this.getData(this.selection[0])['*key']});
+	else obj.push({list: this.listVariableName, row: this.getData(this.selection[0]).__primaryKey});
+	for(var i = 0; i < this.childLists.length; i++) { 
+		var lname = this.childLists[i];
+		var lObj = window[this._hostComponentId + '_DlgObj'].getControl(lname);
+		if(lObj) lObj._getRoute(mode,obj);
+	}
+	return obj;
+}
+,
+	_setRoute: function(route) { 
+	if(typeof route == 'undefined') { 
+		route = this.__currentRoute;
+		if(typeof route == 'undefined') return false;
+	}
+	var lObj = '';
+	var row = '';
+	for(var i = 0; i < route.length; i++) {
+		lObj = window[this._hostComponentId + '_DlgObj'].getControl(route[i].list);
+		row = route[i].row;
+		var flag = typeof this._restoringList != 'undefined' ? !this._restoringList : true;
+		if(typeof row != 'undefined') {
+			var rowFixed = '';
+			if(typeof lObj._dataMap == 'undefined') return false;
+			//var msg = JSON.stringify(lObj._dataMap);
+			//alert('route[i].row:' + route[i].row + ' ------ ' + msg);
+			rowFixed = lObj._dataMap.indexOf(route[i].row);
+			lObj.setValue(rowFixed,flag);
+			if(this._clearServerSideErrors) this._clearServerSideErrors();
+			if(this._showServerSideErrors) this._showServerSideErrors();
+			if(this._showWriteConflictErrors) this._showWriteConflictErrors();
+		}
+	}
+}
+,
+	_useServerSideSyncLog: false,
+	items: {
+'deleteRow' : {
+	itemName: 'deleteRow',
+	selectable: true,
+	onClick: function(index,v,args) { 					var data = this._data[this._dataMap[index]];
+					(function(rowNumber,value,ia,data,lObj) { lObj.removeRows([rowNumber]); }(index,v,args,data,this))
+				}
+}
+},
+	_searchHighlighting: false
+};
+DLG1_DlgObj._listViewData['LISTCOMPONENTS'] = A5DataArrayToObject(['ComponentName'],[]);
+;
+DLG1_DlgObj.setStateInfo({ 	__dialogGuid: '0d036225-a6fa-4458-894d-3fd484624389', 	__dtfmt: 'MM/dd/yyyy' });
+DLG1_DlgObj._controls['LISTCOMPONENTS'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LISTCOMPONENTS'],  settings: DLG1_DlgObj._listViewSettings['LISTCOMPONENTS'] }
+DLG1_DlgObj.setVariables({});
+DLG1_DlgObj._dataBoundControls = [];
+DLG1_DlgObj._primaryTableAlias = '';
+DLG1_DlgObj._actions = {};
+DLG1_DlgObj._actions['verifyComponentExists'] = '/* actionJavascript:ee7820cb-db6d-4c39-a714-f302405aa5cc                               */\nDLG1_DlgObj.ajaxCallback(\'\',\'\',\'verifyFileExists\',\'\',_pgShell.getUxName(),{onComplete: function() { _pgShell.verifyFileExistsCallback()},deviceOfflineFunction: function() {   }});';
+DLG1_DlgObj._listControlsInfo = {};
+DLG1_DlgObj._functions.__fillContainer_LISTCOMPONENTS = function() { 
+	var rExp = new RegExp('^A5dlg[0-9]*\.BODY');
+	var cEle = $('DLG1.V.R1.C2');
+	//test to see if the container parent node is a window body. if so, then set the container to the window
+	if(rExp.test(cEle.parentNode.id)) {
+		var pEle = cEle.parentNode;
+		DLG1_DlgObj._listViewSettings['LISTCOMPONENTS'].containerId = pEle.id;
+		pEle.innerHTML = '';
+	} else {
+		DLG1_DlgObj._listViewSettings['LISTCOMPONENTS'].containerId = cEle.id;
+		//blow away any existing content in the container
+		cEle.innerHTML = '';
+	}
+}
+DLG1_DlgObj._functions.__fillContainer_LISTCOMPONENTS();
+DLG1_DlgObj._hasPanels = true;
+DLG1_DlgObj._hasOnSynchronizeEvent = false;
+A5.__dtfmt = 'MM/dd/yyyy';A5.__tfmt = '';
+A5.__flagWorkingPreview = false;
+A5.__flagIIS = false;
+A5.__flagSimulateIIS = true;
+DLG1_DlgObj._functions.calcOrientation = function() { 
+	if(typeof DLG1_DlgObj == 'undefined') return '';
+	var orientation = DLG1_DlgObj.getOrientation();
+	if( orientation == 'landscape') {
+			//landscape
+			if(DLG1_DlgObj._orientation != 'landscape') {
+				DLG1_DlgObj._fireWatches(1);	
+				DLG1_DlgObj._orientation = 'landscape';
+				DLG1_DlgObj._executeEvent('onOrientationChange',{orientation: 'landscape'});
+			}
+	} else {
+		//portrait
+		if(DLG1_DlgObj._orientation != 'portrait') {
+				DLG1_DlgObj._fireWatches(1);	
+				DLG1_DlgObj._orientation = 'portrait';
+				DLG1_DlgObj._executeEvent('onOrientationChange',{orientation: 'portrait'});
+			}
+	}
+}
+	A5.flags.cordovaLoaded = true;
+	try {
+		document.addEventListener('deviceready', function() { 
+			DLG1_DlgObj._executeEvent('onCordovaReady',{});
+			DLG1_DlgObj._executeEvent('onPhoneGapReady',{});
+			DLG1_DlgObj._cordovaReady = true;
+			navigator.geolocation.getAccuratePosition = function(geolocationSuccess, geolocationError, options) {
+	var _lastCheckedPosition = null;
+	var _locationEventCount = 0;
+	options = options || {};
+	options.context = this;
+    function _checkLocation(pos) {
+        _lastCheckedPosition = pos;
+        _locationEventCount++;
+        if ((pos.coords.accuracy <= options.desiredAccuracy) && (_locationEventCount > options.ignoreResultCount)) {
+            clearTimeout(_timerID);
+            navigator.geolocation.clearWatch(_watchID);
+            _foundPosition(pos);
+        } 
+    }
+    function _stopLocationCheck() {
+    	 var error = {};
+    	 error.code = 0;
+    	 error.message = 'Timeout: No results';
+        navigator.geolocation.clearWatch(_watchID);
+        _lastCheckedPosition ? _foundPosition(_lastCheckedPosition) : geolocationError.call(options.context,error);
+    }
+    function _onError(error) {
+        clearTimeout(_timerID);
+        navigator.geolocation.clearWatch(_watchID);
+        geolocationError.call(options.context,error);
+    }
+    function _foundPosition(pos) {
+        geolocationSuccess.call(options.context,pos);
+    }
+    if (!options.maxWait) {            
+    	options.maxWait = 10000; 
+    }	
+    if (!options.desiredAccuracy) {
+    	  options.desiredAccuracy = 20; 
+    }
+    if (!options.timeout) {
+        options.timeout = options.maxWait;
+	 }
+	 if (!options.ignoreResultCount) {
+	 		options.ignoreResultCount = 1;
+	 }
+    options.maximumAge = 0; 
+    options.enableHighAccuracy = true; 
+    var _watchID = navigator.geolocation.watchPosition(_checkLocation, _onError, options);
+    var _timerID = setTimeout(_stopLocationCheck, options.maxWait); 
+}
+		} , false);	
+	}
+	catch(err) {}
+DLG1_DlgObj._waitGif = 'css/A5System/Images/wait.gif';
+DLG1_DlgObj._layoutMode = 'containerwidth';
+DLG1_DlgObj._responsiveRulesMode = 'firsttrue';
+DLG1_DlgObj.__controlNesting = {
+PH1: [],
+C1: ['searchTxt'],
+C2: ['listComponents'],
+PF1: ['container:C3','container:C4','container:C5'],
+C3: [],
+C4: [],
+C5: [],
+PF2: []
+}
+DLG1_DlgObj._listsDV = [];
+DLG1_DlgObj._listControls = ['listComponents']
+DLG1_DlgObj._localStorageSettings = {namespace: 'ALPHA_1d030ad196084800b783052235e7be24',friendlyName: '',description: '',persistVariableValues: false,__version: 1,persistComponentState: false,workingPreviewTestingFolder: '',restore: {variables: false,data: true,state: false},compressData: false,minify: false,variablesToNotPersist: '',workingPreviewTestingMode: 'Browser',compressListData: false}
+DLG1_DlgObj.__r = ['3rkeltoSdQc=']
+DLG1_DlgObj._staticHTMLMode = false
+DLG1_DlgObj._EDITOR_EDITORSET = {};
+DLG1_DlgObj.styleName = 'iOS7';
+DLG1_DlgObj.styleVersion = 3
+DLG1_DlgObj.framesInfo = {
+};
+DLG1_DlgObj._noPersist = []
+$e.add('DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.getControl('LISTCOMPONENTS').clearSearchList({searchMode : 'auto'});
+DLG1_DlgObj.setValue('searchTxt','');
+},this,false,'DLG1.V.R1.BUTTON_LISTSEARCHCLEAR_LISTCOMPONENTS');
+
+
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_5',A5.d.evnts.click,function(e) {
+DLG1_DlgObj._showDeleteBtn = true;
+var lObj = DLG1_DlgObj.getControl('listComponents');
+lObj.refresh();
+DLG1_DlgObj.refreshClientSideComputations();
+},this,false,'DLG1.V.R1.BUTTON_5');
+
+
+
+$e.add('DLG1.V.R1.BUTTON_6',A5.d.evnts.click,function(e) {
+DLG1_DlgObj._showDeleteBtn = false;
+var lObj = DLG1_DlgObj.getControl('listComponents');
+lObj.refresh();
+DLG1_DlgObj.refreshClientSideComputations();
+},this,false,'DLG1.V.R1.BUTTON_6');
+
+
+
+$e.add('DLG1.V.R1.BUTTON_4',A5.d.evnts.click,function(e) {
+_pgShell.getComponentName();
+},this,false,'DLG1.V.R1.BUTTON_4');
+
+
+
+
+
+
+$e.add('DLG1.V.R1.BUTTON_3',A5.d.evnts.click,function(e) {
+DLG1_DlgObj.panelSetActive('ROOT_PANELCARD',true);
+
+var alias = DLG1_DlgObj._currentChildAlias;
+if(typeof alias != 'undefined') { 
+	alias = alias.toUpperCase();
+	var obj = window[alias + '_DlgObj'];
+	if(obj) obj._destroy();
+}
+},this,false,'DLG1.V.R1.BUTTON_3');
+
+$e.add('DLG1.V.R1.BUTTON_7',A5.d.evnts.click,function(e) {
+var name = DLG1_DlgObj.getValue('listComponents');
+_pgShell.verifySelectedUx(name);
+},this,false,'DLG1.V.R1.BUTTON_7');
+DLG1_DlgObj.prepare();DLG1_DlgObj.populate(DLG1_DlgObj.originalValues[0]);
+DLG1_DlgObj._fireWatches(1);
+
+
+if(!A5.flags.isMobile) $e.add(window,'resize',DLG1_DlgObj._functions.calcOrientation);
+else $e.add(window,'orientationchange',DLG1_DlgObj._orientationChangeHandler,DLG1_DlgObj,true);
+DLG1_DlgObj._functions.calcOrientation();
+
+
+
+
+
+
+
+
+
+
+
+
+
+var listObj = DLG1_DlgObj.getControl('LISTCOMPONENTS');
+if(listObj) listObj._state.recordCount = 0;
+if(listObj) listObj._state.recordCountFormatted = '0';
+if(listObj) listObj._state.lastBreakValue = '<None>';
+if(listObj) listObj._state.pageCount = 0;
+if(listObj) listObj._state.pageSize = 20;
+if(listObj) {var ele = $('DLG1.listComponents.RECORDCOUNT'); if(ele) ele.innerHTML = listObj._state.recordCountFormatted;};
+if(listObj) listObj._state.paginated = false;
+
+if(listObj) listObj._state.filter = '';
+if(listObj) listObj._state.having = '';
+if(listObj) listObj._state.order = '';
+if(listObj) listObj._state.filterParameters = '';
+if(listObj) listObj._state.highlight = {  };
+if(listObj) listObj._state.whereClause = '';
+if(listObj) listObj._state.whereParameters = '';
+		
+		var flagPersist = false;
+		if(typeof listObj._flagPersistDataOK != 'undefined') { 
+			if(listObj._flagPersistDataOK) { 
+				var data = listObj._data;
+				listObj.persistToStorage({mode:'populate', data: data});
+			}
+		}
+		
+		
+;
+DLG1_DlgObj._list_executeEvent('LISTCOMPONENTS','afterRenderComplete',{});
+
+if(listObj._refreshStateMessages) listObj._refreshStateMessages();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+setTimeout(function() { },0);
+DLG1_DlgObj._listsWithJSFuncDataSource = {};
+
+
+DLG1_DlgObj._executeEvent('onInitializeComplete');
+DLG1_DlgObj.initialized = true;
+
+
+;
+
+
+
+var dataObj = {
+};
+
+DLG1_DlgObj.populate(dataObj);
+DLG1_DlgObj._fireWatches(1);
+
+
+DLG1_DlgObj._onRenderComplete = function() { DLG1_DlgObj._runJSOnLoad(); DLG1_DlgObj._findActiveLayoutRule(); }; 
+
+setTimeout(function() { var p = DLG1_DlgObj.panelGet('PGSHELLNAVIGATOR'); if(p._sizing == 'window') { p._sizeWindow();} else { p.refresh(); } },100);
+setTimeout(function() {DLG1_DlgObj._executeEvent('onRenderComplete'); DLG1_DlgObj.flagRenderComplete = true;  DLG1_DlgObj._restoreFromLocalStorage(); },1);
+
+var o2 = 'portrait';
+if(window.innerHeight < window.innerWidth) o2 = 'landscape';
+DLG1_DlgObj._screen = {h: window.innerHeight, w: window.innerWidth, o: o2};
+
+DLG1_DlgObj._getOnlineStatus();
+try {
+window.addEventListener("offline",function() { DLG1_DlgObj._fireOnConnectionChangeEvent() });
+window.addEventListener("online",function() { DLG1_DlgObj._fireOnConnectionChangeEvent() });
+} catch(err){}
+
+
+setTimeout(function() {$e.execute('device.screen','a5resize')},1);
+setTimeout(function() { },10);;
+DLG1_DlgObj._activeLanguage = '<Default>';
+</script>
+<script>
+
+</script>
+</body>
+</html>

@@ -1,0 +1,939 @@
+ sessionid                 name     descrip startti endtim track   sdate   sorder  show    icon
+                                    tion    me      e
+ 1                         Welcome  Welcome 9:00 am 9:15   0       2016092 1       1       
+                           to        to             am             1
+                           DevCon   the 
+                           2016     2016 
+                                    Alpha 
+                                    Develop
+                                    ers 
+                                    Convent
+                                    ion
+ 2                         Opening  Present 9:15 am 9:55   0       2016092 2       1       key.png
+                           Keynote: ation           am             1
+                            Paul    by 
+                           Gillin   author 
+                                    and 
+                                    B2B 
+                                    Social 
+                                    Media 
+                                    Expert,
+                                     Paul 
+                                    Gillin
+ 3                         Break     10:55   11:00  0       2016092 4       1       cup.png
+                                     am      am             1
+ 4                         Most     Join    12:00   12:30  0       2016092 6       1       trophy.
+                           Innovati as as   pm      pm             1                       png
+                           ve App   we 
+                           Contest  look 
+                           Awards   at the 
+                                    winning
+                                     
+                                    entries
+                                     in 
+                                    our 
+                                    Most 
+                                    Innovat
+                                    ive 
+                                    App 
+                                    challen
+                                    ge.
+ 5                         Panel    Panel   11:00   12:00  0       2016092 5       1       key.png
+                           Discussi Discuss am      pm             1
+                           on       ion 
+                                    with 
+                                    partner
+                                    s from 
+                                    a 
+                                    variety
+                                     of 
+                                    big 
+                                    compani
+                                    es.
+ 6                         Lunch     12:30   1:30   0       2016092 7       1       knife_
+                                     pm      pm             1                       fork_
+                                                                                    spoon.
+                                                                                    png
+ 7                                  An      1:30 pm 2:15   1       2016092 8       1       
+                           Introduc overvie         pm             1
+                           tion to  w of 
+                           Alpha    Alpha 
+                           Cloud    Cloud ,
+                                     the 
+                                    major 
+                                    feature
+                                    s that 
+                                    make 
+                                    it a 
+                                    compell
+                                    ing 
+                                    place 
+                                    to run 
+                                    applica
+                                    tions, 
+                                    and 
+                                    how it 
+                                    is 
+                                    integra
+                                    ted 
+                                    into 
+                                    the 
+                                    Alpha 
+                                    Anywher
+                                    e 
+                                    develop
+                                    ment 
+                                    environ
+                                    ment.  
+                                    We 
+                                    will 
+                                    discuss
+                                     basic 
+                                    concept
+                                    s 
+                                    without
+                                     going 
+                                    into 
+                                    great 
+                                    detail.
+                                      You 
+                                    should 
+                                    leave 
+                                    with a 
+                                    basic 
+                                    underst
+                                    anding 
+                                    of 
+                                    what 
+                                    Alpha 
+                                    Cloud 
+                                    is and 
+                                    the 
+                                    benefit
+                                    s in 
+                                    offers.
+ 8                         Empoweri Case    1:30 pm 2:15   2       2016092 9       1       
+                           ng       Study           pm             1
+                           Citizen  Session
+                           Develope  1
+                           rs
+ 9                          Zero    A       2:15 pm 3:00   1       2016092 10      1       
+                           to       demonst         pm             1
+                           Cloud -  ration 
+                           Publishi of the 
+                           ng Your  publica
+                           First    tion 
+                           Applicat process
+                           ion to   .  
+                           Alpha    This 
+                           Cloud    session
+                                     will 
+                                    show 
+                                    you 
+                                    how to 
+                                    set up 
+                                    a 
+                                    basic 
+                                    publish
+                                     
+                                    profile
+                                     for 
+                                    Alpha 
+                                    Cloud, 
+                                    publish
+                                     your 
+                                    applica
+                                    tion, 
+                                    and 
+                                    deploy 
+                                    it on 
+                                    a web 
+                                    site.  
+                                    We 
+                                    will 
+                                    also 
+                                    look 
+                                    at the 
+                                    Cloud 
+                                    View 
+                                    dialog 
+                                    and 
+                                    discuss
+                                     how 
+                                    you 
+                                    can 
+                                    check 
+                                    on 
+                                    your 
+                                    running
+                                     
+                                    applica
+                                    tion, 
+                                    and 
+                                    view 
+                                    usage 
+                                    and 
+                                    logs.  
+                                    Advance
+                                    d 
+                                    options
+                                     for 
+                                    deploym
+                                    ent 
+                                    will 
+                                    be 
+                                    touched
+                                     on, 
+                                    but we 
+                                    won't 
+                                    go 
+                                    into 
+                                    detail.
+                                      You 
+                                    should 
+                                    leave 
+                                    with a 
+                                    clear 
+                                    sense 
+                                    of 
+                                    what 
+                                    is 
+                                    require
+                                    d for 
+                                    a 
+                                    basic 
+                                    deploym
+                                    ent.
+ 10                        Mobile   Case    2:15 pm 3:00   2       2016092 11      1       
+                           Optimzie Study           pm             1
+                           d Forms  Session
+                           Case      2
+                           Study
+ 11                        Break     3:00 pm 3:15   0       2016092 12      1       cup.png
+                                             pm             1
+ 12                                 We      3:15 pm 4:00   1       2016092 13      1       
+                           Producti will            pm             1
+                           on       discuss
+                           Deployme  
+                           nt in    additio
+                           Alpha    nal 
+                           Cloud    steps 
+                                    require
+                                    d for 
+                                    running
+                                     a 
+                                    public 
+                                    facing 
+                                    applica
+                                    tion 
+                                    in 
+                                    product
+                                    ion on 
+                                    Alpha 
+                                    Cloud  
+                                    require
+                                    s a 
+                                    few 
+                                    additio
+                                    nal  
+                                    You 
+                                    will 
+                                    want a 
+                                    product
+                                    ion 
+                                    applica
+                                    tion 
+                                    to use 
+                                    your 
+                                    own 
+                                    domain 
+                                    name 
+                                    and 
+                                    SSL 
+                                    certifi
+                                    cates. 
+                                     We 
+                                    will 
+                                    touch 
+                                    on web 
+                                    site 
+                                    configu
+                                    ration 
+                                    as it 
+                                    relates
+                                     to 
+                                    running
+                                     a 
+                                    product
+                                    ion 
+                                    applica
+                                    tion 
+                                    in a 
+                                    shared 
+                                    environ
+                                    ment.  
+                                    You 
+                                    should 
+                                    leave 
+                                    with a 
+                                    general
+                                     
+                                    underst
+                                    anding 
+                                    of how 
+                                    to 
+                                    deploy 
+                                    tested 
+                                    applica
+                                    tions 
+                                    to a 
+                                    product
+                                    ion 
+                                    web 
+                                    site.
+ 13                        Partner  Partner 3:15 pm 4:00   2       2016092 14      1       
+                           Case      Case           pm             1
+                           Study 1  Study 1
+ 14                        Security Securit 4:00 pm 4:45   1       2016092 15      0       
+                            in      y is            pm             1
+                           Alpha    always 
+                           Cloud    a 
+                                    concern
+                                     when 
+                                    deployi
+                                    ng an 
+                                    applica
+                                    tion. 
+                                    We 
+                                    will 
+                                    discuss
+                                     how 
+                                    Alpha 
+                                    Cloud 
+                                    manages
+                                     users 
+                                    and 
+                                    groups 
+                                    and 
+                                    the 
+                                    impact 
+                                    of  
+                                    your 
+                                    choice 
+                                    of web 
+                                    site 
+                                    tenancy
+                                    .  We 
+                                    will 
+                                    also 
+                                    review 
+                                    the 
+                                    importa
+                                    nce of 
+                                    using 
+                                    securin
+                                    g 
+                                    access 
+                                    to 
+                                    your 
+                                    site 
+                                    through
+                                     TLS/
+                                    SSL 
+                                    and 
+                                    how 
+                                    Alpha 
+                                    Cloud 
+                                    makes 
+                                    this 
+                                    easier.
+                                      You 
+                                    should 
+                                    leave 
+                                    this 
+                                    session
+                                     with 
+                                    a 
+                                    better 
+                                    underst
+                                    anding 
+                                    of how 
+                                    applica
+                                    tions 
+                                    are 
+                                    secured
+                                     on 
+                                    Alpha 
+                                    Cloud.
+ 15                        Partner  Partner 4:00 pm 4:45   2       2016092 16      1       
+                           Case      Case           pm             1
+                           Study 2  Study 2
+ 16                        Cocktail The     5:00 pm 6:30   0       2016092 17      1       cocktai
+                                    recepti         pm             1                       l.png
+                           Receptio on 
+                           n        will 
+                                    be 
+                                    held 
+                                    in the 
+                                    Lincoln
+                                     Room.
+ 17                        Alpha    Alpha   9:00 am 10:25  0       2016092 18      1       key.png
+                           Anywhere Softwar         am             2
+                            Roadmap e 
+                                    Preside
+                                    nt, 
+                                    Selwyn 
+                                    Rabins,
+                                     takes 
+                                    you on 
+                                    a tour 
+                                    of 
+                                    upcomin
+                                    g 
+                                    feature
+                                    s for 
+                                    2016, 
+                                    2017 
+                                    and 
+                                    beyond.
+ 18                        Customer  10:30   10:40  0       2016092 19      1       trophy.
+                            Awards   am      am             2                       png
+                           - 
+                           Farthest
+                            
+                           Traveled
+                           , 
+                           Longest 
+                           Standing
+ 19                        Break     10:45   11:00  0       2016092 20      1       cup.png
+                                     am      am             2
+ 20                        Unplanne  11:00   11:55  0       2016092 21      1       key.png
+                           d Time (  am      am             2
+                           Maybe 
+                           Dan 
+                           shows 
+                           somethin
+                           g?)
+ 21                        Lunch     12:00   1:00   0       2016092 22      1       knife_
+                                     pm      pm             2                       fork_
+                                                                                    spoon.
+                                                                                    png
+ 22                        Troubles Deployi 1:00 pm 1:50   1       2016092 23      1       
+                           hooting  ng to           pm             2
+                           in       Alpha 
+                           Alpha    Cloud 
+                           Cloud    means 
+                           with     not 
+                           the      having 
+                           Cloud    to 
+                           View     manage 
+                           Dialog   a data 
+                                    center.
+                                      It 
+                                    also 
+                                    means 
+                                    not 
+                                    having 
+                                    direct 
+                                    access 
+                                    to the 
+                                    machine
+                                     to 
+                                    manage 
+                                    an 
+                                    applica
+                                    tion.  
+                                    The 
+                                    Cloud 
+                                    View 
+                                    dialog 
+                                    availab
+                                    le in 
+                                    the 
+                                    Alpha 
+                                    Anywher
+                                    e 
+                                    develop
+                                    ment 
+                                    environ
+                                    ment 
+                                    provide
+                                    s a 
+                                    view 
+                                    into 
+                                    your 
+                                    running
+                                     
+                                    applica
+                                    tion 
+                                    so you 
+                                    can 
+                                    verify 
+                                    and 
+                                    debug 
+                                    your 
+                                    applica
+                                    tion.  
+                                    We 
+                                    will 
+                                    discuss
+                                     how 
+                                    to 
+                                    view 
+                                    page 
+                                    usage 
+                                    and 
+                                    server 
+                                    load, 
+                                    view 
+                                    and 
+                                    downloa
+                                    d, 
+                                    logs,  
+                                    and 
+                                    access 
+                                    applica
+                                    tion 
+                                    dump 
+                                    files. 
+                                     We 
+                                    will 
+                                    also 
+                                    show 
+                                    how 
+                                    you 
+                                    can 
+                                    work 
+                                    with 
+                                    Alpha 
+                                    Softwar
+                                    e 
+                                    support
+                                     to 
+                                    make 
+                                    your 
+                                    logs 
+                                    availab
+                                    le to 
+                                    our 
+                                    support
+                                     and 
+                                    develop
+                                    ment 
+                                    teams 
+                                    to 
+                                    debug 
+                                    potenti
+                                    al 
+                                    product
+                                     
+                                    issues.
+                                      You 
+                                    should 
+                                    leave 
+                                    with a 
+                                    basic 
+                                    underst
+                                    anding 
+                                    of the 
+                                    tools 
+                                    availab
+                                    le to 
+                                    you.
+ 23                        Case      1:00 pm 1:50   2       2016092 24      1       
+                           Study 3           pm             2
+ 24                                 In      2:00 pm 2:45   1       2016092 25      1       
+                           Troubles this            pm             2
+                           hooting  trouble
+                           and Bug  shootin
+                           Reports  g 
+                           Elsewher section
+                           e in     , you'
+                           Alpha    ll see 
+                                    how to 
+                                    read 
+                                    and 
+                                    interpr
+                                    est 
+                                    server 
+                                    logs 
+                                    and 
+                                    dump 
+                                    files. 
+                                    We'll 
+                                    also 
+                                    cover 
+                                    general
+                                     
+                                    purpose
+                                     
+                                    trouble
+                                    shootin
+                                    g and 
+                                    the 
+                                    right 
+                                    way to 
+                                    submit 
+                                    bug 
+                                    reports
+                                    .
+ 25                        Case      2:00 pm 2:45   2       2016092 26      1       
+                           Study 4           pm             2
+ 26                        Break     2:45 pm 3:00   0       2016092 27      1       cup.png
+                                             pm             2
+ 27                        Debuggin What    3:00 pm 3:50   1       2016092 28      1       
+                           g        do you          pm             2
+                           PhoneGap do 
+                                    when 
+                           Applicat your 
+                           ions     PhoneGa
+                                    p app 
+                                    simply 
+                                    doesn稚
+                                     work 
+                                    as 
+                                    planned
+                                    ? In 
+                                    this 
+                                    session
+                                     
+                                    you値l 
+                                    learn 
+                                    how to 
+                                    use 
+                                    the 
+                                    Chrome 
+                                    and 
+                                    Safari 
+                                    debugge
+                                    r to 
+                                    debug 
+                                    your 
+                                    Android
+                                     or 
+                                    iOS 
+                                    PhoneGa
+                                    p apps.
+                                     We値l 
+                                    build 
+                                    a 
+                                    native 
+                                    PhoneGa
+                                    p app 
+                                    with 
+                                    known 
+                                    bugs 
+                                    and 
+                                    work 
+                                    through
+                                     the 
+                                    thought
+                                     
+                                    process
+                                     and 
+                                    techniq
+                                    ues 
+                                    require
+                                    d to 
+                                    resolve
+                                     the 
+                                    issues.
+                                     
+                                    Client 
+                                    side 
+                                    and 
+                                    server 
+                                    side 
+                                    debuggi
+                                    ng 
+                                    will 
+                                    be 
+                                    discuss
+                                    ed.
+ 28                        Partner   3:00 pm 3:50   2       2016092 29      1       
+                           Case              pm             2
+                           Study 3
+ 29                        What's   In      4:00    4:45   1       2016092 30      1       
+                           New in   this            pm             2
+                           PhoneGap session
+                                    , 
+                           Developm we値l 
+                           ent      take a 
+                                    look 
+                                    at 
+                                    some 
+                                    of the 
+                                    new 
+                                    PhoneGa
+                                    p 
+                                    plugins
+                                     and 
+                                    compone
+                                    nt 
+                                    templat
+                                    es for 
+                                    iOS 
+                                    and 
+                                    Android
+                                    . 
+                                    We値l 
+                                    also 
+                                    discuss
+                                     
+                                    SQLite 
+                                    and 
+                                    SQLCiph
+                                    er for 
+                                    securin
+                                    g data 
+                                    at 
+                                    rest 
+                                    on a 
+                                    mobile 
+                                    device.
+ 30                        Partner   4:00 pm 4:45   2       2016092 31      1       
+                           Case              pm             2
+                           Study 4
+ 31                        Hackatho In      5:00 pm 6:00   0       2016092 32      1       
+                           n        this            pm             2
+                                    mini-
+                                    hacktho
+                                    n, 
+                                    partici
+                                    pants 
+                                    compete
+                                     for 
+                                    prizes 
+                                    to try 
+                                    their 
+                                    skills 
+                                    in 
+                                    buildin
+                                    g a 
+                                    mini 
+                                    applica
+                                    tion 
+                                    in a 
+                                    short 
+                                    deadlin
+                                    e - 
+                                    just 
+                                    30 
+                                    minutes
+                                    ! May 
+                                    the 
+                                    best 
+                                    develop
+                                    er win.
+ 32                        Engineer  9:00 am 10:15  0       2016092 33      1       key.png
+                           ing               am             3
+                           Panel 
+                           and Q&A
+ 33                        Award:    10:20   10:30  0       2016092 34      1       trophy.
+                           Most      am      am             3                       png
+                           Alpha 
+                           DevCon 
+                           Tweets
+ 34                        Mobilizi  10:30   11:15  0       2016092 35      1       key.png
+                           ng                am             3
+                           Microsof
+                           t 
+                           Access 
+                           Special 
+                           Event/
+                           Content
+ 35                        Testing  Testing 11:30   12:00  0       2016092 36      1       key.png
+                           Your      your   am      pm             3
+                           Apps on  mobile 
+                           the      applica
+                           Amazon   tion 
+                           Cloud    in an 
+                           Device   emulato
+                           Farm     r is 
+                                    one 
+                                    thing, 
+                                    but 
+                                    the 
+                                    most 
+                                    accurat
+                                    e way 
+                                    to 
+                                    test 
+                                    an 
+                                    applica
+                                    tion 
+                                    is on 
+                                    a 
+                                    physica
+                                    l 
+                                    device.
+                                     The 
+                                    problem
+                                     is 
+                                    there 
+                                    are 
+                                    hundred
+                                    s of 
+                                    devices
+                                     on 
+                                    the 
+                                    market.
+                                     You 
+                                    can't 
+                                    own 
+                                    them 
+                                    all, 
+                                    and 
+                                    you 
+                                    can't 
+                                    test 
+                                    on 
+                                    them 
+                                    all. 
+                                    That's 
+                                    where 
+                                    the 
+                                    AWS 
+                                    Device 
+                                    Cloud 
+                                    Farm 
+                                    service
+                                     comes 
+                                    into 
+                                    play. 
+                                    With 
+                                    this 
+                                    service
+                                     you 
+                                    can 
+                                    you 
+                                    test 
+                                    your 
+                                    applica
+                                    tions 
+                                    on the 
+                                    same 
+                                    devices
+                                     your 
+                                    clients
+                                     are 
+                                    using, 
+                                    right 
+                                    over 
+                                    the 
+                                    cloud. 
+                                     See 
+                                    how.
+ 36                        Lunch     12:00   1:00   0       2016092 37      1       knife_
+                                     pm      pm             3                       fork_
+                                                                                    spoon.
+                                                                                    png
+ 37                        Stylizin Good    1:00 pm 1:50   0       2016092 38      1       key.png
+                           g Alpha  user            pm             3
+                           Applicat interfa
+                           ion      ce 
+                           with     design 
+                           Bootstra can be 
+                           p Themes the 
+                                    differe
+                                    nce 
+                                    between
+                                     a 
+                                    hugely 
+                                    success
+                                    ful 
+                                    website
+                                     or 
+                                    app 
+                                    and 
+                                    its 
+                                    failure
+                                     to 
+                                    make 
+                                    any 
+                                    impact.
+                                     If 
+                                    your 
+                                    potenti
+                                    al 
+                                    custome
+                                    rs 
+                                    find 
+                                    your 
+                                    website
+                                     to be 
+                                    too 
+                                    complic
+                                    ated 
+                                    to 
+                                    navigat
+                                    e or 
+                                    too 
+                                    busy 
+                                    and 
+                                    confusi
+                                    ng, 
+                                    then 
+                                    even 
+                                    the 
+                                    best 
+                                    service
+                                     or 
+                                    product
+                                     in 
+                                    the 
+                                    world 
+                                    could 
+                                    be 
+                                    left 
+                                    collect
+                                    ing 
+                                    dust 
+                                    on the 
+                                    Interne
+                                    t 
+                                    shelves
+                                    .
+                                    <br/><
+                                    br/>
+                                    This 
+                                    fun 
+                                    and 
+                                    informa
+                                    tive 
+                                    session
+                                     will 
+                                    introdu
+                                    ce you 
+                                    to the 
+                                    steps 
+                                    to 
+                                    integra
+                                    te 
+                                    Bootstr
+                                    ap 
+                                    theme 
+                                    content
+                                     into 
+                                    your 
+                                    Alpha 
+                                    Anywher
+                                    e 
+                                    solutio
+                                    ns to 
+                                    make 
+                                    them 
+                                    look 
+                                    fantast
+                                    ic!
+ 38                        Hot       2:00 pm 2:25   0       2016092 39      1       fire.
+                           Items             pm             3                       png
+ 39                        Conferen  2:30 pm 3:00   0       2016092 40      1       key.png
+                           ce                pm             3
+                           Closing
+ 40                        Future    10:00   10:45  0       2016092 3       0       key.png
+                           of        am      am             1
+                           Mobile 
+                           Enterpri
+                           se
+          

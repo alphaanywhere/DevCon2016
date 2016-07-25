@@ -1,0 +1,30 @@
+{
+	"_id": "2179315",
+	"_icon": "",
+	"_ssL": "",
+	"_ssP": "",
+	"_initialUxComponent": "pgshell",
+	"_componentLastUpdated": "07/21/2016 02:24:30 00 pm",
+	"_ajaxUrl": "http://192.168.1.86",
+	"_additionalFiles": "*.png",
+	"_userName": "xsSrjVniJg/q1h9pJ8UchzivoozYsvrg",
+	"_pw": "DLWCQ7KIYJZWRjm9mixFKA==",
+	"_token": "",
+	"timeout": {
+		"phoneGapBuild": "<default>",
+		"phoneGapBuildLogin": "<default>",
+		"getAppIcon": "<default>"
+	},
+	"apperian": {
+		"enableOptions": false,
+		"loginName": "osLnGM4pUcQ=",
+		"password": "c5JMXi9Y+Ko=",
+		"serverURL": "https://easesvc.apperian.com/ease.interface.php"
+	},
+	"backupConfigFile": true,
+	"useImageMagick": true,
+	"indexHTMLMetaTags": "",
+	"genAppZipFile": false,
+	"zipFileLocation": "",
+	"_sqlitedbdefined": false
+}

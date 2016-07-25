@@ -1,0 +1,30 @@
+{
+	"_id": "2179654",
+	"_icon": "",
+	"_ssL": "",
+	"_ssP": "",
+	"_initialUxComponent": "ConfApp",
+	"_componentLastUpdated": "07/25/2016 10:53:22 00 am",
+	"_ajaxUrl": "http://davemccormick-dave.cloud.alphasoftware.com/",
+	"_additionalFiles": "*.png",
+	"_userName": "xsSrjVniJg/q1h9pJ8UchzivoozYsvrg",
+	"_pw": "DLWCQ7KIYJZWRjm9mixFKA==",
+	"_token": "",
+	"timeout": {
+		"phoneGapBuild": "<default>",
+		"phoneGapBuildLogin": "<default>",
+		"getAppIcon": "<default>"
+	},
+	"apperian": {
+		"enableOptions": false,
+		"loginName": "osLnGM4pUcQ=",
+		"password": "c5JMXi9Y+Ko=",
+		"serverURL": "https://easesvc.apperian.com/ease.interface.php"
+	},
+	"backupConfigFile": true,
+	"useImageMagick": true,
+	"indexHTMLMetaTags": "",
+	"genAppZipFile": false,
+	"zipFileLocation": "",
+	"_sqlitedbdefined": false
+}
