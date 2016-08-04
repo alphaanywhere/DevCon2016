@@ -153,4 +153,209 @@
 <target_folder="c:\a5webroot">
 <timestamp=CTODT('07/21/2016 07:58:46 14 pm')>
 >
+<[32]<type="calendaricons">
+<name="calendaricons">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:31 72 pm')>
+>
+<[33]<type="javascript">
+<name="javascript">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:32 20 pm')>
+>
+<[34]<type="A5WPage">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\devcon2016.a5w}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:32 99 pm')>
+>
+<[35]<type="A5WPage">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\index.a5w}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 01 pm')>
+>
+<[36]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\confapp.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 25 pm')>
+>
+<[37]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\dave1.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 34 pm')>
+>
+<[38]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\dave2.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 40 pm')>
+>
+<[39]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\devcontest.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 48 pm')>
+>
+<[40]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\hello.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 51 pm')>
+>
+<[41]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\list.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 55 pm')>
+>
+<[42]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\pgshell.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 66 pm')>
+>
+<[43]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\sessionswebview.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 72 pm')>
+>
+<[44]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\sessionviewer.a5wcmp}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 80 pm')>
+>
+<[45]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\cocktail.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 85 pm')>
+>
+<[46]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\corel auto-preserve\header1.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:33 99 pm')>
+>
+<[47]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\cup.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 08 pm')>
+>
+<[48]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\data_cloud.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 09 pm')>
+>
+<[49]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\devconsessionreport.a5rpt}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 11 pm')>
+>
+<[50]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\fire.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 14 pm')>
+>
+<[51]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\header1.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 19 pm')>
+>
+<[52]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\image2.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 25 pm')>
+>
+<[53]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\key.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 27 pm')>
+>
+<[54]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\knife_fork_spoon.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 28 pm')>
+>
+<[55]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\logo.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 31 pm')>
+>
+<[56]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\logo2.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 33 pm')>
+>
+<[57]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\navigate_left.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 39 pm')>
+>
+<[58]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\navigate_right.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 44 pm')>
+>
+<[59]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\projectproperties.projectproperties}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 45 pm')>
+>
+<[60]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\refresh.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 47 pm')>
+>
+<[61]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\refresh2.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 51 pm')>
+>
+<[62]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\refresh3.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 54 pm')>
+>
+<[63]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\refresh4.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 59 pm')>
+>
+<[64]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\thumbs.db}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 69 pm')>
+>
+<[65]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\trophy.png}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:34 71 pm')>
+>
+<[66]<type="css">
+<name="a5system">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:35 31 pm')>
+>
+<[67]<type="css">
+<name="ios7">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:35 47 pm')>
+>
+<[68]<type="file">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\project.securitysettings}">
+<target_folder="cloudlocal">
+<timestamp=CTODT('07/26/2016 01:17:35 58 pm')>
+>
+<[69]<type="calendaricons">
+<name="calendaricons">
+<target_folder="c:\a5webroot\livepreview">
+<timestamp=CTODT('07/27/2016 11:09:51 33 am')>
+>
+<[70]<type="javascript">
+<name="javascript">
+<target_folder="c:\a5webroot\livepreview">
+<timestamp=CTODT('07/27/2016 11:09:51 46 am')>
+>
+<[71]<type="WebComponent">
+<name="{z:\documents\alpha\product management\conf app\conferenceapp.webprojects\default.webproject\sessionviewer.a5wcmp}">
+<target_folder="c:\a5webroot\livepreview">
+<timestamp=CTODT('07/27/2016 11:09:52 01 am')>
+>
+<[72]<type="css">
+<name="ios7">
+<target_folder="c:\a5webroot\livepreview">
+<timestamp=CTODT('07/27/2016 11:09:52 21 am')>
+>
 >

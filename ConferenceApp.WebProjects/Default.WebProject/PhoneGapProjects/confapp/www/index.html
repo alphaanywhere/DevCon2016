@@ -774,7 +774,7 @@ if(typeof DLG1_DlgObj != 'undefined') {var mObj = DLG1_DlgObj.getControl('LIST3'
 	},
 	footer: {
 		show: true,
-		html: '<div \tid="DLG1.V.R1.CONTAINER_4"    \t\t\tclass="A5CWLayout "  style="width: 15%; height: 40px; "  > <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_2"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> <div \tid="DLG1.V.R1.CONTAINER_5"    \t\t\tclass="A5CWLayout "  style="background-color: #666; width: 70%; height: 40px; "  > <div style="display: table; margin: auto;"> <div class="A5CWLayout" style="width: 2in" > \t<span\tid="DLG1.V.R1.DAY" class="iOS7GridData" style="color: #fff; background-color: #666; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>  </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> \t</div> <div \tid="DLG1.V.R1.CONTAINER_6"    \t\t\tclass="A5CWLayout "  style="width: 15%; height: 40px; "  > <div style="float: right;"> <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_3"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> \t</div> ',
+		html: '<div \tid="DLG1.V.R1.CONTAINER_4"    \t\t\tclass="A5CWLayout "  style="width: 15%; height: 40px; "  > <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_2"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> <div \tid="DLG1.V.R1.CONTAINER_5"    \t\t\tclass="A5CWLayout "  style="background-color: #666; margin-top: -15px; margin-bottom: 10px; width: 70%; height: 40px; "  > <div style="display: table; margin: auto;"> <div class="A5CWLayout" style="width: 2in" > \t<span\tid="DLG1.V.R1.DAY" class="iOS7GridData" style="text-align: center; color: #fff; background-color: #666; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block" title=""    ></span>  </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> \t</div> <div \tid="DLG1.V.R1.CONTAINER_6"    \t\t\tclass="A5CWLayout "  style="width: 15%; height: 40px; "  > <div style="float: right;"> <div class="A5CWLayout" style="width: " > \t<button type="button" id="DLG1.V.R1.BUTTON_3"    ></button> </div> <div style="font: 0pt arial;clear:both;"></div> \t</div> \t</div> ',
 		style: 'background-color: #666;'
 	},
 	overlay: {
@@ -834,14 +834,14 @@ var DLG1_DlgObj = new A5.DialogComponentHelper('DLG1',{
 	'LIST1': '',
 	'LIST2': '',
 	'LIST3': '',
-	'DAY': 'September 21, 2016',
+	'DAY': 'Wednesday<br>September 21, 2016',
 	'DESCRIPTION': ''
 }],
 	defaultValues: {
 	LIST1: '',
 	LIST2: '',
 	LIST3: '',
-	DAY: 'September 21, 2016',
+	DAY: 'Wednesday<br>September 21, 2016',
 	DESCRIPTION: ''
 },
 	datePickerMonthNames: ['January','February','March','April','May','June','July','August','September','October','November','December'],
@@ -899,7 +899,7 @@ DLG1_DlgObj.dialogWatches['SHOWHIDE_BUTTON_2'] = {
 	var DAY = DLG1_DlgObj.getValue('DAY',data.rowNumber);
 	if( A5.isBlank(DAY)) DAY= '';
 	var showHide = '';
-	if( (DAY != 'September 21, 2016') == true ) showHide = '';
+	if( (DAY != 'Wednesday<br>September 21, 2016') == true ) showHide = '';
 	else showHide = 'none';	
 	if(showHide == 'none') {	
 		DLG1_DlgObj.setControlDisplay(''+'BUTTON_2'+'',false,'display');
@@ -918,7 +918,7 @@ DLG1_DlgObj.dialogWatches['SHOWHIDE_BUTTON_3'] = {
 	var DAY = DLG1_DlgObj.getValue('DAY',data.rowNumber);
 	if( A5.isBlank(DAY)) DAY= '';
 	var showHide = '';
-	if( (DAY != 'September 23, 2016') == true ) showHide = '';
+	if( (DAY != 'Friday<br>September 23, 2016') == true ) showHide = '';
 	else showHide = 'none';	
 	if(showHide == 'none') {	
 		DLG1_DlgObj.setControlDisplay(''+'BUTTON_3'+'',false,'display');
@@ -928,7 +928,7 @@ DLG1_DlgObj.dialogWatches['SHOWHIDE_BUTTON_3'] = {
 	}
 }
 DLG1_DlgObj.setStateInfo({
-	__dialogGuid: '54b580a3-c6b6-4552-a376-ad0b79d930a1',
+	__dialogGuid: '806760ac-4219-4b81-b652-a425587bc7e9',
 	argumentsBoundToCotrols: '',
 	__sgr: '',
 	__dtfmt: 'MM/dd/yyyy',
@@ -4055,7 +4055,7 @@ DLG1_DlgObj._listViewData['LIST3'] = [
 {"sessionid" : "1", "name" : "Click the Refresh button at the top right to load latest information.", "description" : "", "starttime" : "9:00am", "endtime" : "9:15 am", "track" : "0", "show" : "T", "sdate" : "20160921", "sorder" : "1", "icon" : ""}
 ];
 ;
-DLG1_DlgObj.setStateInfo({ 	__dialogGuid: '54b580a3-c6b6-4552-a376-ad0b79d930a1', 	__dtfmt: 'MM/dd/yyyy' });
+DLG1_DlgObj.setStateInfo({ 	__dialogGuid: '806760ac-4219-4b81-b652-a425587bc7e9', 	__dtfmt: 'MM/dd/yyyy' });
 DLG1_DlgObj._controls['LIST1'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LIST1'],  settings: DLG1_DlgObj._listViewSettings['LIST1'] }
 DLG1_DlgObj._controls['LIST2'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LIST2'],  settings: DLG1_DlgObj._listViewSettings['LIST2'] }
 DLG1_DlgObj._controls['LIST3'] =  { type: 'list',  data: DLG1_DlgObj._listViewData['LIST3'],  settings: DLG1_DlgObj._listViewSettings['LIST3'] }
@@ -9646,12 +9646,12 @@ A5.executeThisThenThat(tempfunction_2ef41eee_9109_4f9a_ab2e_4bca5cf5d98c,tempfun
 $e.add('DLG1.V.R1.BUTTON_2',A5.d.evnts.click,function(e) {
 DLG1_DlgObj.panelNavigate('PANELNAVIGATOR_1','Previous');
 
-if (DLG1_DlgObj.getValue('Day') == 'September 22, 2016') {
-	DLG1_DlgObj.setValue('Day','September 21, 2016' );
+if (DLG1_DlgObj.getValue('Day') == 'Thursday<br>September 22, 2016') {
+	DLG1_DlgObj.setValue('Day','Wednesday<br>September 21, 2016' );
 	}
 
-if (DLG1_DlgObj.getValue('Day') == 'September 23, 2016') {
-	DLG1_DlgObj.setValue('Day','September 22, 2016' );
+if (DLG1_DlgObj.getValue('Day') == 'Friday<br>September 23, 2016') {
+	DLG1_DlgObj.setValue('Day','Thursday<br>September 22, 2016' );
 	}
 },this,false,'DLG1.V.R1.BUTTON_2');
 
@@ -9663,12 +9663,12 @@ if (DLG1_DlgObj.getValue('Day') == 'September 23, 2016') {
 $e.add('DLG1.V.R1.BUTTON_3',A5.d.evnts.click,function(e) {
 DLG1_DlgObj.panelNavigate('PANELNAVIGATOR_1','Next');
 
-if (DLG1_DlgObj.getValue('Day') == 'September 22, 2016') {
-	DLG1_DlgObj.setValue('Day','September 23, 2016' );
+if (DLG1_DlgObj.getValue('Day') == 'Thursday<br>September 22, 2016') {
+	DLG1_DlgObj.setValue('Day','Friday<br>September 23, 2016' );
 	}
 
-if (DLG1_DlgObj.getValue('Day') == 'September 21, 2016') {
-	DLG1_DlgObj.setValue('Day','September 22, 2016' );
+if (DLG1_DlgObj.getValue('Day') == 'Wednesday<br>September 21, 2016') {
+	DLG1_DlgObj.setValue('Day','Thursday<br>September 22, 2016' );
 	}
 },this,false,'DLG1.V.R1.BUTTON_3');
 DLG1_DlgObj.prepare();DLG1_DlgObj.populate(DLG1_DlgObj.originalValues[0]);

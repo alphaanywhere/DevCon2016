@@ -43,7 +43,6 @@
 	<preference name="LoadingPageDialog" value="Please wait, the data is loading." />
 	<preference name="LoadUrlTimeoutValue" value="20000" />
 	<preference name="AndroidPersistentFileLocation" value="Internal" />
-	<preference name="android-build-tool" value="gradle" />
     <icon src="icon.png" />
 	<splash src="splash.png" />
 	<splash platform="ios" height="1136" src="res/screen/ios/screen-iphone-portrait-568h-2x.png" width="640" />
@@ -114,8 +113,4 @@
 	<platform name="ios" />
 	<plugin name="cordova-plugin-file" source="npm" />
 	<plugin name="cordova-plugin-file-transfer" source="npm" />
-	<platform name="android" />
-	<plugin name="cordova-plugin-network-information" source="npm" />
-	<plugin name="cordova-plugin-splashscreen" source="npm" />
-	<plugin name="cordova-plugin-whitelist" source="npm" />
 </widget>

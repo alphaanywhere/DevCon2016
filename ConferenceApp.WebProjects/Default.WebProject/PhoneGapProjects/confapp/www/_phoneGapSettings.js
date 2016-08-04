@@ -36,11 +36,15 @@ function _phoneGapSettings() {
         "LoadingDialog": "Please wait, the app is loading.",
         "LoadingPageDialog": "Please wait, the data is loading.",
         "LoadUrlTimeoutValue": "20000",
-        "AndroidPersistentFileLocation": "Internal"
+        "AndroidPersistentFileLocation": "Internal",
+        "android-build-tool": "gradle"
     },
     "plugins": {
         "file": "npm",
-        "file-transfer": "npm"
+        "file-transfer": "npm",
+        "network-information": "npm",
+        "splashscreen": "npm",
+        "whitelist": "npm"
     }
 };
 }

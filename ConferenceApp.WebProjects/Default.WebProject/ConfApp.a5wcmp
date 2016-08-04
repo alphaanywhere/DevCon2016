@@ -160,7 +160,7 @@
         "info": {
             "createdBy": "davem",
             "dateCreated": "2016-6-6",
-            "dateLastEdited": "2016-7-25"
+            "dateLastEdited": "2016-7-28"
         },
         "flagShowCommentsInTree": true,
         "treeCommentOffset": "6",
@@ -208,11 +208,6 @@
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#51+111+61,White}{B=White,#51+111+61n}{F=+B}{Data=0a91fd44-922b-473c-8413-e3acb0ab067e}{I:'$$web.panel.navigator'} [Panel Navigator: PANELNAVIGATOR_1] (Programmatic)  (H,F) (LTR)",
                 "crc": "4294965395",
-                "indentTree": 0,
-                "precalc": {
-                    "ControlHTML": "'xbasic\nv._dirty = .f.\n",
-                    "DesignViewHTML": ""
-                },
                 "v": {
                     "container": {
                         "id": "PANELNAVIGATOR_1"
@@ -237,6 +232,11 @@
                             "location": "Top"
                         }
                     }
+                },
+                "indentTree": 0,
+                "precalc": {
+                    "ControlHTML": "'xbasic\nv._dirty = .f.\n",
+                    "DesignViewHTML": ""
                 }
             },
             {
@@ -625,13 +625,6 @@
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{I:'vertLine'}{Data=0def14f3-d5a3-4103-a17c-ab1e489b0fed}{I:'$$control.button'} [Button: REFRESH]",
                 "crc": "4294938132",
-                "indentTree": 3,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.REFRESH\"    ></button>\n</div>",
-                    "DesignViewHTML": ""
-                },
-                "inPanelCard": false,
-                "inTreeControl": false,
                 "v": {
                     "buttonText": "REFRESH",
                     "Class": "<Default>",
@@ -686,7 +679,14 @@
                     "javascript": {
                         "onclick": ""
                     }
-                }
+                },
+                "indentTree": 3,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.REFRESH\"    ></button>\n</div>",
+                    "DesignViewHTML": ""
+                },
+                "inPanelCard": false,
+                "inTreeControl": false
             },
             {
                 "controlType": "layout_directive_ContainerEnd",
@@ -5940,12 +5940,17 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{I:'vertLine'}{Data=d87b2136-82cc-4672-8584-31c2d4a70539}{I:'$$format.border.style.dash'} [Container: CONTAINER_4]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{I:'vertLine'}{Data=d87b2136-82cc-4672-8584-31c2d4a70539}{I:'$$format.border.style.dash'} [Container: CONTAINER_4]",
-                "crc": "4294965776",
+                "crc": "4294940704",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_4\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 15%; height: 40px; \"  ><!--DIV for Container control-->",
+                    "DesignViewHTML": ""
+                },
                 "v": {
                     "container": {
                         "ID": "CONTAINER_4",
                         "contentAlignment": "Left",
-                        "width": "15%",
+                        "width": "15%;",
                         "height": "40px;",
                         "buttonGroup": {
                             "orientation": "Horizontal"
@@ -5993,11 +5998,6 @@
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     }
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_4\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 15%; height: 40px; \"  ><!--DIV for Container control-->",
-                    "DesignViewHTML": ""
                 }
             },
             {
@@ -6009,7 +6009,14 @@
                 "displayOD": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{I:'vertLine'}{Data=8791ee55-46c7-43a9-b1e9-d3e0557c6304}{I:'$$control.button'} [Button]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{I:'vertLine'}{Data=8791ee55-46c7-43a9-b1e9-d3e0557c6304}{I:'$$control.button'} [Button]",
-                "crc": "4294926273",
+                "crc": "4294932776",
+                "indentTree": 3,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2\"    ></button>\n</div>",
+                    "DesignViewHTML": ""
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
                     "buttonText": "Button",
                     "Class": "<Default>",
@@ -6050,13 +6057,13 @@
                     "clientSideconditionalStyle": "",
                     "CalcExpression": "",
                     "EnableExpression": "",
-                    "ShowExpression": "Day != 'September 21, 2016'",
+                    "ShowExpression": "Day != 'Wednesday<br>September 21, 2016'",
                     "abstractJavascript": {
-                        "click": "/* actionJavascript:9dfa23a4-9b88-4554-aec9-5576d5f9a0c2  */\n{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Previous');\n\nif ({dialog.Object}.getValue('Day') == 'September 22, 2016') {\n\t{dialog.Object}.setValue('Day','September 21, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'September 23, 2016') {\n\t{dialog.Object}.setValue('Day','September 22, 2016' );\n\t}"
+                        "click": "/* actionJavascript:9dfa23a4-9b88-4554-aec9-5576d5f9a0c2   */\n{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Previous');\n\nif ({dialog.Object}.getValue('Day') == 'Thursday<br>September 22, 2016') {\n\t{dialog.Object}.setValue('Day','Wednesday<br>September 21, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'Friday<br>September 23, 2016') {\n\t{dialog.Object}.setValue('Day','Thursday<br>September 22, 2016' );\n\t}"
                     },
                     "precalc": {
-                        "javascriptClientSideWatches": "{dialog.object}.dialogWatches['SHOWHIDE_BUTTON_2'] = {\n\t\twatch: ['DAY'],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\t\n\tvar dialog = {};\n\tvar summary = {};\n\t{dialog.object}._getDialogVariables(dialog,summary,data);\n\tvar DAY = {dialog.object}.getValue('DAY',data.rowNumber);\n\tif( A5.isBlank(DAY)) DAY= '';\n\tvar showHide = '';\n\tif( (DAY != 'September 21, 2016') == true ) showHide = '';\n\telse showHide = 'none';\t\n\tif(showHide == 'none') {\t\n\t\t{dialog.object}.setControlDisplay(''+'BUTTON_2'+'',false,'display');\n\t} else {\n\t\t{dialog.object}.setControlDisplay(''+'BUTTON_2'+'',true,'display');\n\t}\n\t\n\t}\n}\n\n",
-                        "javascriptAbstractSetupCode": "$e.add('{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2',A5.d.evnts.click,function(e) {\n{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Previous');\n\nif ({dialog.Object}.getValue('Day') == 'September 22, 2016') {\n\t{dialog.Object}.setValue('Day','September 21, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'September 23, 2016') {\n\t{dialog.Object}.setValue('Day','September 22, 2016' );\n\t}\n},this,false,'{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2');\n",
+                        "javascriptClientSideWatches": "{dialog.object}.dialogWatches['SHOWHIDE_BUTTON_2'] = {\n\t\twatch: ['DAY'],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\t\n\tvar dialog = {};\n\tvar summary = {};\n\t{dialog.object}._getDialogVariables(dialog,summary,data);\n\tvar DAY = {dialog.object}.getValue('DAY',data.rowNumber);\n\tif( A5.isBlank(DAY)) DAY= '';\n\tvar showHide = '';\n\tif( (DAY != 'Wednesday<br>September 21, 2016') == true ) showHide = '';\n\telse showHide = 'none';\t\n\tif(showHide == 'none') {\t\n\t\t{dialog.object}.setControlDisplay(''+'BUTTON_2'+'',false,'display');\n\t} else {\n\t\t{dialog.object}.setControlDisplay(''+'BUTTON_2'+'',true,'display');\n\t}\n\t\n\t}\n}\n\n",
+                        "javascriptAbstractSetupCode": "$e.add('{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2',A5.d.evnts.click,function(e) {\n{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Previous');\n\nif ({dialog.Object}.getValue('Day') == 'Thursday<br>September 22, 2016') {\n\t{dialog.Object}.setValue('Day','Wednesday<br>September 21, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'Friday<br>September 23, 2016') {\n\t{dialog.Object}.setValue('Day','Thursday<br>September 22, 2016' );\n\t}\n},this,false,'{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2');\n",
                         "javascriptAdvancedButton": "",
                         "javascriptAdvancedButton_control": "{dialog.object}._buttons['BUTTON_2'] = new A5.Button({\n\tlayout: 'icon',\n\tstyle: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',\n\thtml: 'Button',\n\ticon: 'navigate_left.png',\n\tdisabledIcon: 'navigate_left.png',\n\tonClick: function() { \n\n},\n\ttheme: '{grid.style}'\n});",
                         "javascriptAdvancedButton_bind": "{dialog.object}._buttons['BUTTON_2'].bind('{DIALOG.COMPONENTNAME}.V.R{DIALOG.ROWNUMBER}.BUTTON_2');"
@@ -6064,14 +6071,7 @@
                     "javascript": {
                         "onclick": ""
                     }
-                },
-                "indentTree": 3,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2\"    ></button>\n</div>",
-                    "DesignViewHTML": ""
-                },
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_ContainerEnd",
@@ -6107,13 +6107,18 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{I:'vertLine'}{Data=75ae970e-4a80-47c6-9d6e-0b7100a17c8e}{I:'$$format.border.style.dash'} [Container: CONTAINER_5]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{I:'vertLine'}{Data=75ae970e-4a80-47c6-9d6e-0b7100a17c8e}{I:'$$format.border.style.dash'} [Container: CONTAINER_5]",
-                "crc": "4294941526",
+                "crc": "4294962588",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_5\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #666; margin-top: -15px; margin-bottom: 10px; width: 70%; height: 40px; \"  ><!--DIV for Container control-->\n<div style=\"display: table; margin: auto;\">",
+                    "DesignViewHTML": ""
+                },
                 "v": {
                     "container": {
                         "ID": "CONTAINER_5",
                         "style": "background-color:#666;",
                         "contentAlignment": "Center",
-                        "width": "70%",
+                        "width": "70%;",
                         "height": "40px",
                         "buttonGroup": {
                             "orientation": "Horizontal"
@@ -6158,14 +6163,13 @@
                             }
                         }
                     },
+                    "Spacer": {
+                        "Above": "-15px",
+                        "Below": "10px"
+                    },
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     }
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_5\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #666; width: 70%; height: 40px; \"  ><!--DIV for Container control-->\n<div style=\"display: table; margin: auto;\">",
-                    "DesignViewHTML": ""
                 }
             },
             {
@@ -6177,7 +6181,10 @@
                 "displayOD": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{I:'vertLine'}{Data=173e13f5-baa2-4652-af50-b2dfbf37e4ae}{I:'$$control.text'} [Day]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{I:'vertLine'}{Data=173e13f5-baa2-4652-af50-b2dfbf37e4ae}{I:'$$control.text'} [Day]",
-                "crc": "4294912348",
+                "crc": "4294938040",
+                "indentTree": 3,
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
                     "controlType": "Label",
                     "variableName": "Day",
@@ -6186,15 +6193,13 @@
                     "watermark": {
                         "text": "<FieldLabel>"
                     },
-                    "precalc": {
-                        "javascriptAbstractSetupCode": ""
-                    },
+                    "textboxSubTheme": "",
                     "textboxAutocorrect": true,
                     "textboxAutoCapitalize": true,
                     "label": "Day",
-                    "defaultValue": "September 21, 2016",
+                    "defaultValue": "Wednesday<br>September 21, 2016",
                     "class": "<Default>",
-                    "style": " background-color:#666; color:#fff;",
+                    "style": "background-color: #666; color: #fff; text-align: center;",
                     "breakType": "None",
                     "breakHeight": ".1in",
                     "breakHorizontalSpace": ".1in",
@@ -6218,7 +6223,6 @@
                             "newRecordImage": "<None>"
                         }
                     },
-                    "textboxSubTheme": "",
                     "datePicker": {
                         "displayTimePicker": false,
                         "openMethod": "ClickIcon",
@@ -6239,18 +6243,18 @@
                         "display": false
                     },
                     "displayAsSlider": false,
+                    "precalc": {
+                        "javascriptAbstractSetupCode": ""
+                    },
                     "flags": {
                         "clientSideDefinition": false
                     }
                 },
-                "indentTree": 3,
                 "precalc": {
-                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--FldS--><span\tid=\"{grid.componentname}.V.R{grid.rownumber}.DAY\" class=\"[class.dialogLabel]\" style=\"color: #fff; background-color: #666; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block\" title=\"\"    ></span>\n<!--FldE-->\n</div>",
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--FldS--><span\tid=\"{grid.componentname}.V.R{grid.rownumber}.DAY\" class=\"[class.dialogLabel]\" style=\"text-align: center; color: #fff; background-color: #666; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block\" title=\"\"    ></span>\n<!--FldE-->\n</div>",
                     "DesignViewHTML": "",
                     "columnInfo": "'DAY': {info: {controlType: 'Label'}, hiddenVal: false, type: 'label,label', isCalc: false, hlp: '', isArray: false, dataType: 'C'  }\n"
-                },
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_ContainerEnd",
@@ -6286,12 +6290,17 @@
                 "displayOD": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{I:'vertLine'}{Data=81319f6e-7680-45ff-8c3c-7d3c9d3d1c78}{I:'$$format.border.style.dash'} [Container: CONTAINER_6]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{C=#0+0+127,White}{B=White,Light Blue}{F=+B}{I:'vertLine'}{I:'vertLine'}{Data=81319f6e-7680-45ff-8c3c-7d3c9d3d1c78}{I:'$$format.border.style.dash'} [Container: CONTAINER_6]",
-                "crc": "4294965354",
+                "crc": "4294903031",
+                "indentTree": 2,
+                "precalc": {
+                    "ControlHTML": "<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_6\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 15%; height: 40px; \"  ><!--DIV for Container control-->\n<div style=\"float: right;\">",
+                    "DesignViewHTML": ""
+                },
                 "v": {
                     "container": {
                         "ID": "CONTAINER_6",
                         "contentAlignment": "Right",
-                        "width": "15%",
+                        "width": "15%;",
                         "height": "40px",
                         "buttonGroup": {
                             "orientation": "Horizontal"
@@ -6339,11 +6348,6 @@
                     "precalc": {
                         "javascriptAbstractSetupCode": ""
                     }
-                },
-                "indentTree": 2,
-                "precalc": {
-                    "ControlHTML": "<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_6\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 15%; height: 40px; \"  ><!--DIV for Container control-->\n<div style=\"float: right;\">",
-                    "DesignViewHTML": ""
                 }
             },
             {
@@ -6355,7 +6359,14 @@
                 "displayOD": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{I:'vertLine'}{Data=58f8b264-2a35-4dc4-8b56-a6bd432d6d99}{I:'$$control.button'} [Button]",
                 "repeatingSectionParentId": -1,
                 "displayODtree": "{B=White,Light Blue}{I:'vertLine'}{I:'vertLine'}{I:'vertLine'}{Data=58f8b264-2a35-4dc4-8b56-a6bd432d6d99}{I:'$$control.button'} [Button]",
-                "crc": "4294907665",
+                "crc": "4294906998",
+                "indentTree": 3,
+                "precalc": {
+                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_3\"    ></button>\n</div>",
+                    "DesignViewHTML": ""
+                },
+                "inPanelCard": false,
+                "inTreeControl": false,
                 "v": {
                     "buttonText": "Button",
                     "Class": "<Default>",
@@ -6396,13 +6407,13 @@
                     "clientSideconditionalStyle": "",
                     "CalcExpression": "",
                     "EnableExpression": "",
-                    "ShowExpression": "Day != 'September 23, 2016'",
+                    "ShowExpression": "Day != 'Friday<br>September 23, 2016'",
                     "abstractJavascript": {
-                        "click": "/* actionJavascript:17e24067-fb08-4363-972d-6b4054df3a63      */\n{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Next');\n\nif ({dialog.Object}.getValue('Day') == 'September 22, 2016') {\n\t{dialog.Object}.setValue('Day','September 23, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'September 21, 2016') {\n\t{dialog.Object}.setValue('Day','September 22, 2016' );\n\t}"
+                        "click": "/* actionJavascript:17e24067-fb08-4363-972d-6b4054df3a63          */\n{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Next');\n\nif ({dialog.Object}.getValue('Day') == 'Thursday<br>September 22, 2016') {\n\t{dialog.Object}.setValue('Day','Friday<br>September 23, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'Wednesday<br>September 21, 2016') {\n\t{dialog.Object}.setValue('Day','Thursday<br>September 22, 2016' );\n\t}"
                     },
                     "precalc": {
-                        "javascriptClientSideWatches": "{dialog.object}.dialogWatches['SHOWHIDE_BUTTON_3'] = {\n\t\twatch: ['DAY'],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\t\n\tvar dialog = {};\n\tvar summary = {};\n\t{dialog.object}._getDialogVariables(dialog,summary,data);\n\tvar DAY = {dialog.object}.getValue('DAY',data.rowNumber);\n\tif( A5.isBlank(DAY)) DAY= '';\n\tvar showHide = '';\n\tif( (DAY != 'September 23, 2016') == true ) showHide = '';\n\telse showHide = 'none';\t\n\tif(showHide == 'none') {\t\n\t\t{dialog.object}.setControlDisplay(''+'BUTTON_3'+'',false,'display');\n\t} else {\n\t\t{dialog.object}.setControlDisplay(''+'BUTTON_3'+'',true,'display');\n\t}\n\t\n\t}\n}\n\n",
-                        "javascriptAbstractSetupCode": "$e.add('{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_3',A5.d.evnts.click,function(e) {\n{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Next');\n\nif ({dialog.Object}.getValue('Day') == 'September 22, 2016') {\n\t{dialog.Object}.setValue('Day','September 23, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'September 21, 2016') {\n\t{dialog.Object}.setValue('Day','September 22, 2016' );\n\t}\n},this,false,'{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_3');\n",
+                        "javascriptClientSideWatches": "{dialog.object}.dialogWatches['SHOWHIDE_BUTTON_3'] = {\n\t\twatch: ['DAY'],\n\t\tvariables: [],\n\t\tonChange: function(data) {\n\t\n\t\n\tvar dialog = {};\n\tvar summary = {};\n\t{dialog.object}._getDialogVariables(dialog,summary,data);\n\tvar DAY = {dialog.object}.getValue('DAY',data.rowNumber);\n\tif( A5.isBlank(DAY)) DAY= '';\n\tvar showHide = '';\n\tif( (DAY != 'Friday<br>September 23, 2016') == true ) showHide = '';\n\telse showHide = 'none';\t\n\tif(showHide == 'none') {\t\n\t\t{dialog.object}.setControlDisplay(''+'BUTTON_3'+'',false,'display');\n\t} else {\n\t\t{dialog.object}.setControlDisplay(''+'BUTTON_3'+'',true,'display');\n\t}\n\t\n\t}\n}\n\n",
+                        "javascriptAbstractSetupCode": "$e.add('{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_3',A5.d.evnts.click,function(e) {\n{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Next');\n\nif ({dialog.Object}.getValue('Day') == 'Thursday<br>September 22, 2016') {\n\t{dialog.Object}.setValue('Day','Friday<br>September 23, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'Wednesday<br>September 21, 2016') {\n\t{dialog.Object}.setValue('Day','Thursday<br>September 22, 2016' );\n\t}\n},this,false,'{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_3');\n",
                         "javascriptAdvancedButton": "",
                         "javascriptAdvancedButton_control": "{dialog.object}._buttons['BUTTON_3'] = new A5.Button({\n\tlayout: 'icon',\n\tstyle: 'box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;',\n\thtml: 'Button',\n\ticon: 'navigate_right.png',\n\tdisabledIcon: 'navigate_right.png',\n\tonClick: function() { \n\n},\n\ttheme: '{grid.style}'\n});",
                         "javascriptAdvancedButton_bind": "{dialog.object}._buttons['BUTTON_3'].bind('{DIALOG.COMPONENTNAME}.V.R{DIALOG.ROWNUMBER}.BUTTON_3');"
@@ -6410,14 +6421,7 @@
                     "javascript": {
                         "onclick": ""
                     }
-                },
-                "indentTree": 3,
-                "precalc": {
-                    "ControlHTML": "<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_3\"    ></button>\n</div>",
-                    "DesignViewHTML": ""
-                },
-                "inPanelCard": false,
-                "inTreeControl": false
+                }
             },
             {
                 "controlType": "layout_directive_ContainerEnd",
@@ -7199,7 +7203,7 @@
         "customSettingsJSON": "",
         "saveFileType": "Formatted JSON",
         "keyboardShortcutsJSON": "",
-        "selected": "0a91fd44-922b-473c-8413-e3acb0ab067e\n",
+        "selected": "8791ee55-46c7-43a9-b1e9-d3e0557c6304\n",
         "designPaneIndex": 1,
         "masterPaneC": "controls",
         "serverSideEventIndex": 1,
@@ -7229,7 +7233,7 @@
             },
             "fileUpload_controlInfo": "",
             "javascript_cascadingDropdowns": "{dialog.object}._cascadingControls = [];\n{dialog.object}._cascadingControlsChildren = [];",
-            "template_html": "<!--div GLOBALERRORS-->\n<div class=\"errorTip\" style=\"margin-bottom: 2px; display: none; width: 8in; \" id=\"{dialog.componentname}.GLOBALERRORS\"></div>\n<!--End div GLOBALERRORS-->\n\n<div id=\"{dialog.componentname}.R1\">\n'xbasic\nv._dirty = .f.\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.PANELHEADER_1\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #287aaf; border-bottom: 3px solid #c0c0c0; \"  ><!--DIV for Container control-->\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.SPACER\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #fff; margin-top: -10px; margin-left: -10px; margin-right: -20px; width: 120%; height: 20px; \"  ><!--DIV for Container control-->\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n<!--breakbegin--><br  id=\"{dialog.componentname}.V.R1.SPACER.BREAK\"  style=\"clear:both; \" /><!--breakend-->\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_1\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 85%; height: 30px; \"  ><!--DIV for Container control-->\n<div class=\"A5CWLayout\" style=\"width: 240px\" >\n\t<img id=\"{dialog.componentName}.V.R{dialog.rownumber}.IMAGE_1\"  src=\"header1.png\" class=\"\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" title=\"\"     onerror=\"if(typeof {dialog.object} != 'undefined') {dialog.object}._executeEvent('onImageError',{element: this});\"  />\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_2\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"padding-top: 2px; width: 15%; height: 30px; \"  ><!--DIV for Container control-->\n<div style=\"float: right;\">\n<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.REFRESH\"    ></button>\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\t</div>\n<!--breakbegin--><br  id=\"{dialog.componentname}.V.R1.CONTAINER_2.BREAK\"  style=\"clear:both; \" /><!--breakend-->\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\n'xbasic\n\nv._dirty = .f.\n\n\n\n<div class=\"A5CWLayout\" style=\"width: 4in\" >\n\t<!--FldS--><!--JSControlStart--><input type=\"hidden\" id=\"{grid.componentname}.V.R{grid.rownumber}.LIST1\" name=\"V.R{grid.rownumber}.LIST1\" /><!--JSControlEnd-->\n<div  class=\"none\"   style=\"padding:0px; \"  >\n\t<div id=\"{grid.componentname}.V.R{grid.rownumber}.LIST1.CONTROL\"  class=\"{grid.componentName}_LIST1\" style=\"overflow: auto; width: 100%; height: 3in; \"></div>\n</div>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n'xbasic\nv._dirty = .f.\n\n'xbasic\n\nv._dirty = .f.\n\n\n\n<div class=\"A5CWLayout\" style=\"width: 4in\" >\n\t<!--FldS--><!--JSControlStart--><input type=\"hidden\" id=\"{grid.componentname}.V.R{grid.rownumber}.LIST2\" name=\"V.R{grid.rownumber}.LIST2\" /><!--JSControlEnd-->\n<div  class=\"none\"   style=\"padding:0px; \"  >\n\t<div id=\"{grid.componentname}.V.R{grid.rownumber}.LIST2.CONTROL\"  class=\"{grid.componentName}_LIST2\" style=\"overflow: auto; width: 100%; height: 3in; \"></div>\n</div>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n'xbasic\nv._dirty = .f.\n\n'xbasic\n\nv._dirty = .f.\n\n\n\n<div class=\"A5CWLayout\" style=\"width: 4in\" >\n\t<!--FldS--><!--JSControlStart--><input type=\"hidden\" id=\"{grid.componentname}.V.R{grid.rownumber}.LIST3\" name=\"V.R{grid.rownumber}.LIST3\" /><!--JSControlEnd-->\n<div  class=\"none\"   style=\"padding:0px; \"  >\n\t<div id=\"{grid.componentname}.V.R{grid.rownumber}.LIST3.CONTROL\"  class=\"{grid.componentName}_LIST3\" style=\"overflow: auto; width: 100%; height: 3in; \"></div>\n</div>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n'xbasic\nv._dirty = .f.\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.PANELFOOTER_4\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #666; \"  ><!--DIV for Container control-->\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_4\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 15%; height: 40px; \"  ><!--DIV for Container control-->\n<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2\"    ></button>\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_5\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #666; width: 70%; height: 40px; \"  ><!--DIV for Container control-->\n<div style=\"display: table; margin: auto;\">\n<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--FldS--><span\tid=\"{grid.componentname}.V.R{grid.rownumber}.DAY\" class=\"[class.dialogLabel]\" style=\"color: #fff; background-color: #666; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block\" title=\"\"    ></span>\n<!--FldE-->\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\t</div>\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_6\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 15%; height: 40px; \"  ><!--DIV for Container control-->\n<div style=\"float: right;\">\n<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_3\"    ></button>\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\t</div>\n\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\n'xbasic\nv._dirty = .f.\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n<!--div DEBUGUPDATECOMMANDS-->\n<div class=\"\" style=\"display: none; \" id=\"{dialog.componentname}.DEBUGUPDATECOMMANDS\"></div>\n<!--End div DEBUGUPDATECOMMANDS-->\n",
+            "template_html": "<!--div GLOBALERRORS-->\n<div class=\"errorTip\" style=\"margin-bottom: 2px; display: none; width: 8in; \" id=\"{dialog.componentname}.GLOBALERRORS\"></div>\n<!--End div GLOBALERRORS-->\n\n<div id=\"{dialog.componentname}.R1\">\n'xbasic\nv._dirty = .f.\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.PANELHEADER_1\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #287aaf; border-bottom: 3px solid #c0c0c0; \"  ><!--DIV for Container control-->\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.SPACER\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #fff; margin-top: -10px; margin-left: -10px; margin-right: -20px; width: 120%; height: 20px; \"  ><!--DIV for Container control-->\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n<!--breakbegin--><br  id=\"{dialog.componentname}.V.R1.SPACER.BREAK\"  style=\"clear:both; \" /><!--breakend-->\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_1\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 85%; height: 30px; \"  ><!--DIV for Container control-->\n<div class=\"A5CWLayout\" style=\"width: 240px\" >\n\t<img id=\"{dialog.componentName}.V.R{dialog.rownumber}.IMAGE_1\"  src=\"header1.png\" class=\"\" style=\"width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;\" title=\"\"     onerror=\"if(typeof {dialog.object} != 'undefined') {dialog.object}._executeEvent('onImageError',{element: this});\"  />\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_2\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"padding-top: 2px; width: 15%; height: 30px; \"  ><!--DIV for Container control-->\n<div style=\"float: right;\">\n<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.REFRESH\"    ></button>\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\t</div>\n<!--breakbegin--><br  id=\"{dialog.componentname}.V.R1.CONTAINER_2.BREAK\"  style=\"clear:both; \" /><!--breakend-->\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\n'xbasic\n\nv._dirty = .f.\n\n\n\n<div class=\"A5CWLayout\" style=\"width: 4in\" >\n\t<!--FldS--><!--JSControlStart--><input type=\"hidden\" id=\"{grid.componentname}.V.R{grid.rownumber}.LIST1\" name=\"V.R{grid.rownumber}.LIST1\" /><!--JSControlEnd-->\n<div  class=\"none\"   style=\"padding:0px; \"  >\n\t<div id=\"{grid.componentname}.V.R{grid.rownumber}.LIST1.CONTROL\"  class=\"{grid.componentName}_LIST1\" style=\"overflow: auto; width: 100%; height: 3in; \"></div>\n</div>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n'xbasic\nv._dirty = .f.\n\n'xbasic\n\nv._dirty = .f.\n\n\n\n<div class=\"A5CWLayout\" style=\"width: 4in\" >\n\t<!--FldS--><!--JSControlStart--><input type=\"hidden\" id=\"{grid.componentname}.V.R{grid.rownumber}.LIST2\" name=\"V.R{grid.rownumber}.LIST2\" /><!--JSControlEnd-->\n<div  class=\"none\"   style=\"padding:0px; \"  >\n\t<div id=\"{grid.componentname}.V.R{grid.rownumber}.LIST2.CONTROL\"  class=\"{grid.componentName}_LIST2\" style=\"overflow: auto; width: 100%; height: 3in; \"></div>\n</div>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n'xbasic\nv._dirty = .f.\n\n'xbasic\n\nv._dirty = .f.\n\n\n\n<div class=\"A5CWLayout\" style=\"width: 4in\" >\n\t<!--FldS--><!--JSControlStart--><input type=\"hidden\" id=\"{grid.componentname}.V.R{grid.rownumber}.LIST3\" name=\"V.R{grid.rownumber}.LIST3\" /><!--JSControlEnd-->\n<div  class=\"none\"   style=\"padding:0px; \"  >\n\t<div id=\"{grid.componentname}.V.R{grid.rownumber}.LIST3.CONTROL\"  class=\"{grid.componentName}_LIST3\" style=\"overflow: auto; width: 100%; height: 3in; \"></div>\n</div>\n<!--FldE-->\n</div><!--breakbegin--><br  style=\"clear:both; \" /><!--breakend-->\n'xbasic\nv._dirty = .f.\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.PANELFOOTER_4\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #666; \"  ><!--DIV for Container control-->\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_4\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 15%; height: 40px; \"  ><!--DIV for Container control-->\n<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_2\"    ></button>\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_5\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"background-color: #666; margin-top: -15px; margin-bottom: 10px; width: 70%; height: 40px; \"  ><!--DIV for Container control-->\n<div style=\"display: table; margin: auto;\">\n<div class=\"A5CWLayout\" style=\"width: 2in\" >\n\t<!--FldS--><span\tid=\"{grid.componentname}.V.R{grid.rownumber}.DAY\" class=\"[class.dialogLabel]\" style=\"text-align: center; color: #fff; background-color: #666; width: 100%; box-sizing: border-box; -moz-box-sizing: border-box; -ms-box-sizing: border-box; -webkit-box-sizing: border-box;; display:inline-block\" title=\"\"    ></span>\n<!--FldE-->\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\t</div>\n\n<div \tid=\"{dialog.componentName}.V.R{dialog.rownumber}.CONTAINER_6\"   \n\t\t\tclass=\"A5CWLayout \"  style=\"width: 15%; height: 40px; \"  ><!--DIV for Container control-->\n<div style=\"float: right;\">\n<div class=\"A5CWLayout\" style=\"width: \" >\n\t<button type=\"button\" id=\"{dialog.componentName}.V.R{dialog.rownumber}.BUTTON_3\"    ></button>\n</div>\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\t</div>\n\n<div style=\"font: 0pt arial;clear:both;\"></div>\n\t</div>\n\n'xbasic\nv._dirty = .f.\n\n\n\n\n\n\n\n\n\n\n\n\n</div>\n<!--div DEBUGUPDATECOMMANDS-->\n<div class=\"\" style=\"display: none; \" id=\"{dialog.componentname}.DEBUGUPDATECOMMANDS\"></div>\n<!--End div DEBUGUPDATECOMMANDS-->\n",
             "panelDisplayNames": "PANELCARD_1 : 'PANELCARD_1',PANELCARD_2 : 'PANELCARD_2',PANELCARD_3 : 'PANELCARD_3',PANELNAVIGATOR_1 : 'PANELNAVIGATOR_1'",
             "controlJavascript": "",
             "controlJavascriptRepeatingSections": "",
@@ -7256,9 +7260,9 @@
         "dialogObject": "if(typeof {dialog.componentName}_DlgObj == 'object') {dialog.componentName}_DlgObj._destroy();\nvar {dialog.componentName}_DlgObj = new A5.DialogComponentHelper('{dialog.componentName}',{\n\tajaxURL: '{dialog.ajaxUrl}',\n\t_embeddedMode: {dialog.embeddedMode},\n\t_livePreviewInBuilder: {livePreviewInBuilder},\n\tcomponentGUID: '0c1e38c2-6550-4ca9-8ac4-c8c228249b7e',\n\tcolumnInfo: {columninfo},\n\toriginalValues: {dialog.jsOriginalValues},\n\tdefaultValues: {dialog.jsDefaultValues},\n\tdatePickerMonthNames: [{datePickerMonthNames}],\n\tdatePickerDayNames: [{datePickerDayNames}],\n\tdatePickerTodayButton: '{datePickerTodayButton}',\n\tdatePickerCloseButton: '{datePickerCloseButton}',\n\tdatePickerFirstDayOfWeek: {datePickerFirstDayOfWeek},\n\tresetFormMessage: '{resetFormMessage}',\n\tresetFormTitle: '{resetFormTitle}',\n\tresetFormIcon: '{resetFormIcon}',\n\tdirtyFormMessage: '{dirtyFormMessage}',\n\tdirtyFormTitle: '{dirtyFormTitle}',\n\tdirtyFormIcon: '{dirtyFormIcon}',\n\tdeleteRecordDialogTitle: '{deleteRecordTitle}',\n\tdeleteRecordDialogMessage: '{deleteRecordMessage}',\t\n\tssDateFormat: '{serverSideDateFormat}',\n\tstyleName: '{dialog.style}',\n\t_fieldHelpers_DIALOG2: [],\n\tparentComponentAlias: '{parentComponentAlias}',\n\tsubmitIfHasClientSideErrors: true, \n\trowErrors: {\n\t\t\t\tshowMessageBox: false,\n\t\t\t\tmessageBoxTitle: 'Error',\n\t\t\t\tstyle: 'color: red; width: 6in; height: 2in;'\n\t\t},\n\tfieldErrors: {\n\t\ttype: 'block', \n\t\tclassName: 'errorText',\n\t\tinputClassName: '[class.gridInputError]',\n\t\tedit: { \n\t\t\tcontainer: { className: '[class.gridInputContainerError]'}\n\t\t},\n\t\ticon: '{images.dialog.editError}',\n\t\tglobal: {\n\t\t\tcontId: '{dialog.componentname}.GLOBALERRORS',\n\t\t\thoverClassName: 'errorTextHighlight',\n\t\t\thoverInputClassName: 'errorInputHighlight'\n\t\t}\n\t}\n\n\t});\n\n",
         "xbasiccode": {
             "blankInitialValueIfVarNotFound": "",
-            "setValueProperties": "value.LIST1=\"\"\nvalue.LIST2=\"\"\nvalue.LIST3=\"\"\nvalue.DAY=\"September 21, 2016\"\nvalue.DESCRIPTION=\"\"",
-            "setValueProperties2": "value.LIST1=\"\"\nvalue.LIST2=\"\"\nvalue.LIST3=\"\"\nvalue.DAY=\"September 21, 2016\"\nvalue.DESCRIPTION=\"\"",
-            "setValueUnformattedProperties": "value.LIST1=convert_type(\"\",\"C\")\nvalue.LIST2=convert_type(\"\",\"C\")\nvalue.LIST3=convert_type(\"\",\"C\")\nvalue.DAY=convert_type(\"September 21, 2016\",\"C\")\nvalue.DESCRIPTION=convert_type(\"\",\"C\")\n"
+            "setValueProperties": "value.LIST1=\"\"\nvalue.LIST2=\"\"\nvalue.LIST3=\"\"\nvalue.DAY=\"Wednesday<br>September 21, 2016\"\nvalue.DESCRIPTION=\"\"",
+            "setValueProperties2": "value.LIST1=\"\"\nvalue.LIST2=\"\"\nvalue.LIST3=\"\"\nvalue.DAY=\"Wednesday<br>September 21, 2016\"\nvalue.DESCRIPTION=\"\"",
+            "setValueUnformattedProperties": "value.LIST1=convert_type(\"\",\"C\")\nvalue.LIST2=convert_type(\"\",\"C\")\nvalue.LIST3=convert_type(\"\",\"C\")\nvalue.DAY=convert_type(\"Wednesday<br>September 21, 2016\",\"C\")\nvalue.DESCRIPTION=convert_type(\"\",\"C\")\n"
         },
         "componentType": "Dialog2",
         "version": 1,
@@ -7285,12 +7289,12 @@
                 "scriptMetaData": "<a_ajs<[1]<action=\"Enable or Disable a Button\">\n<icon=\"$$control.button\">\n<isCommentedOut=.F.>\n<comment=\"Disable the refresh button\">\n<builder=\"a5ajs_GenericAction(v,wf,pv,dlg_mode,\\\"disableButton\\\")\">\n<metaData=<<%str%\n<buttonId=\"REFRESH\">\n<buttonMode=\"Disable\">\n%str%>\n<javascriptAttribute=<<%str%\nvar btn = {dialog.object}.getControl('REFRESH');\nbtn.setDisabled(true);%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'$$control.button'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Enable or Disable a Button{T=4}{I:'a5_vertical_line'}Disable the refresh button\">\n>\n<[2]<action=\"Show Container Window.\">\n<icon=\"$$window.cascade\">\n<isCommentedOut=.F.>\n<comment=\"Show the data loading window\">\n<builder=\"a5ajs_ShowContainerWindow(v,wf,pv,dlg_mode)\">\n<metaData=<<%str%\n<containerID=\"WINDOW_4\">\n%str%>\n<javascriptAttribute=\"{dialog.object}.showContainerWindow(this,'WINDOW_4');\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'$$window.cascade'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Show Container Window.{T=4}{I:'a5_vertical_line'}Show the data loading window\">\n>\n<[3]<action=\"Client-side Data Cache Actions.\">\n<icon=\"$$database\">\n<isCommentedOut=.F.>\n<comment=\"refresh data from query\">\n<builder=\"a5ajs_Dialog_ListControlActions(v,wf,pv,dlg_mode,\\\"clientsidedatacache\\\")\">\n<metaData=<<%str%\n<cacheItemName=\"\">\n<cacheItemNames=\"sessions\">\n<cacheItemNames2=\"\">\n<listaction=\"Refresh Data Item(s)\">\n<javascript<OnSuccess=\"\">\n<onfail=\"\">\n<onComplete=\"\">\n>\n<filter=\"\">\n<order=\"\">\n%str%>\n<javascriptAttribute=<<%str%\nvar _refresh = function() {\n\n}\n{dialog.object}.refreshDataCacheItem('sessions',_refresh);%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'$$database'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Client-side Data Cache Actions.{T=4}{I:'a5_vertical_line'}refresh data from query\">\n>\n<[4]<display=\"{I:'$$database'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Client-side Data Cache Actions.{T=4}{I:'a5_vertical_line'}UpdateList1\">\n<action=\"Client-side Data Cache Actions.\">\n<icon=\"$$database\">\n<isCommentedOut=.F.>\n<comment=\"UpdateList1\">\n<builder=\"a5ajs_Dialog_ListControlActions(v,wf,pv,dlg_mode,\\\"clientsidedatacache\\\")\">\n<metaData=<<%str1%\n<cacheItemName=\"sessions\">\n<cacheItemNames=\"\">\n<cacheItemNames2=\"\">\n<listaction=\"Read Data\">\n<javascript<OnSuccess=<<%str%\n\n\nvar lObj = {dialog.object}.getControl('list1');\nlObj.populate(data);%str%>\n<onfail=\"\">\n<onComplete=\"\">\n>\n<filter=\"data.sdate == '20160921'\">\n<order=\"sorder | Number\">\n%str1%>\n<javascriptAttribute=<<%str%\nvar _onSuccess = function(data) { \nvar lObj = {dialog.object}.getControl('list1');\nlObj.populate(data);\n};\nvar _onFail = function() { \n\n};\nvar _filter = 'data.sdate == \\'20160921\\'';\nvar _order = {'sorder : number' : 1};\n{dialog.object}.getFromDataCache('sessions',_onSuccess,_onFail,_filter,_order);%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n<[5]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"UpdateList2\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str1%\n<inlineJavascript=<<%str%\nvar _onSuccess = function(data) { \nvar lObj = {dialog.object}.getControl('list2');\nlObj.populate(data);\n};\nvar _onFail = function() { \n\n};\nvar _filter = 'data.sdate == \\'20160922\\'';\nvar _order = {'sorder : number' : 1};\n{dialog.object}.getFromDataCache('sessions',_onSuccess,_onFail,_filter,_order);%str%>\n%str1%>\n<javascriptAttribute=<<%str%\nvar _onSuccess = function(data) { \nvar lObj = {dialog.object}.getControl('list2');\nlObj.populate(data);\n};\nvar _onFail = function() { \n\n};\nvar _filter = 'data.sdate == \\'20160922\\'';\nvar _order = {'sorder : number' : 1};\n{dialog.object}.getFromDataCache('sessions',_onSuccess,_onFail,_filter,_order);%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}UpdateList2\">\n>\n<[6]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"UpdateList3\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str1%\n<inlineJavascript=<<%str%\nvar _onSuccess = function(data) { \nvar lObj = {dialog.object}.getControl('list3');\nlObj.populate(data);\n};\nvar _onFail = function() { \n\n};\nvar _filter = 'data.sdate == \\'20160923\\'';\nvar _order = {'sorder : number' : 1};\n{dialog.object}.getFromDataCache('sessions',_onSuccess,_onFail,_filter,_order);%str%>\n%str1%>\n<javascriptAttribute=<<%str%\nvar _onSuccess = function(data) { \nvar lObj = {dialog.object}.getControl('list3');\nlObj.populate(data);\n};\nvar _onFail = function() { \n\n};\nvar _filter = 'data.sdate == \\'20160923\\'';\nvar _order = {'sorder : number' : 1};\n{dialog.object}.getFromDataCache('sessions',_onSuccess,_onFail,_filter,_order);%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}UpdateList3\">\n>\n<[7]<action=\"Hide/Close Container Window.\">\n<icon=\"$$window.cascade\">\n<isCommentedOut=.F.>\n<comment=\"Hide the data loading window\">\n<builder=\"a5ajs_ShowContainerWindow(v,wf,pv,dlg_mode,\\\"close\\\")\">\n<metaData=<<%str%\n<containerID=\"WINDOW_4\">\n%str%>\n<javascriptAttribute=\"{dialog.object}.hideContainerWindow('WINDOW_4');\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'$$window.cascade'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Hide/Close Container Window.{T=4}{I:'a5_vertical_line'}Hide the data loading window\">\n>\n<[8]<action=\"Enable or Disable a Button\">\n<icon=\"$$control.button\">\n<isCommentedOut=.F.>\n<comment=\"Re-enable the refresh button\">\n<builder=\"a5ajs_GenericAction(v,wf,pv,dlg_mode,\\\"disableButton\\\")\">\n<metaData=<<%str%\n<buttonId=\"REFRESH\">\n<buttonMode=\"Enable\">\n%str%>\n<javascriptAttribute=<<%str%\nvar btn = {dialog.object}.getControl('REFRESH');\nbtn.setDisabled(false);%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'$$control.button'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Enable or Disable a Button{T=4}{I:'a5_vertical_line'}Re-enable the refresh button\">\n>\n>\n<flagRunSynchronously=.T.>\n"
             },
             {
-                "actionGuid": "17e24067-fb08-4363-972d-6b4054df3a63     ",
-                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$web.panel.layout'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Panel Actions.{T=4}{I:'a5_vertical_line'}Navigate Next\">\n<action=\"Panel Actions.\">\n<icon=\"$$web.panel.layout\">\n<isCommentedOut=.F.>\n<comment=\"Navigate Next\">\n<builder=\"a5ajs_Dialog_PanelActions(v,wf,pv,dlg_mode)\">\n<metaData=<<%str%\n<panelAction=\"Navigate\">\n<navigationDirection=\"Next\">\n<panelNavigatorName=\"PANELNAVIGATOR_1\">\n<panelName=\"\">\n<panelPart=\"Body\">\n<jsvarname=\"var1\">\n<panelcardIframeURL=\"\">\n<withAnimation=.T.>\n<jsvarnameWidth=\"var_width\">\n<jsvarnameHeight=\"var_height\">\n<panelContainerNavOrLayout=\"\">\n<scrollX=\"0\">\n<scrollY=\"0\">\n<panelShowHidePart=\"Header\">\n<panelShowHideAction=\"Hide\">\n%str%>\n<javascriptAttribute=\"{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Next');\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n<[2]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"Set Date\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str1%\n<inlineJavascript=<<%str%\n\nif ({dialog.Object}.getValue('Day') == 'September 22, 2016') {\n\t{dialog.Object}.setValue('Day','September 23, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'September 21, 2016') {\n\t{dialog.Object}.setValue('Day','September 22, 2016' );\n\t}\n\t\n\t%str%>\n%str1%>\n<javascriptAttribute=<<%str%\n\nif ({dialog.Object}.getValue('Day') == 'September 22, 2016') {\n\t{dialog.Object}.setValue('Day','September 23, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'September 21, 2016') {\n\t{dialog.Object}.setValue('Day','September 22, 2016' );\n\t}\n\t\n\t%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}Set Date\">\n>\n>\n<flagRunSynchronously=.F.>\n"
+                "actionGuid": "17e24067-fb08-4363-972d-6b4054df3a63         ",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$web.panel.layout'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Panel Actions.{T=4}{I:'a5_vertical_line'}Navigate Next\">\n<action=\"Panel Actions.\">\n<icon=\"$$web.panel.layout\">\n<isCommentedOut=.F.>\n<comment=\"Navigate Next\">\n<builder=\"a5ajs_Dialog_PanelActions(v,wf,pv,dlg_mode)\">\n<metaData=<<%str%\n<panelAction=\"Navigate\">\n<navigationDirection=\"Next\">\n<panelNavigatorName=\"PANELNAVIGATOR_1\">\n<panelName=\"\">\n<panelPart=\"Body\">\n<jsvarname=\"var1\">\n<panelcardIframeURL=\"\">\n<withAnimation=.T.>\n<jsvarnameWidth=\"var_width\">\n<jsvarnameHeight=\"var_height\">\n<panelContainerNavOrLayout=\"\">\n<scrollX=\"0\">\n<scrollY=\"0\">\n<panelShowHidePart=\"Header\">\n<panelShowHideAction=\"Hide\">\n%str%>\n<javascriptAttribute=\"{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Next');\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n<[2]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"Set Date\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str1%\n<inlineJavascript=<<%str%\n\nif ({dialog.Object}.getValue('Day') == 'Thursday<br>September 22, 2016') {\n\t{dialog.Object}.setValue('Day','Friday<br>September 23, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'Wednesday<br>September 21, 2016') {\n\t{dialog.Object}.setValue('Day','Thursday<br>September 22, 2016' );\n\t}\n\t\n\t%str%>\n%str1%>\n<javascriptAttribute=<<%str%\n\nif ({dialog.Object}.getValue('Day') == 'Thursday<br>September 22, 2016') {\n\t{dialog.Object}.setValue('Day','Friday<br>September 23, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'Wednesday<br>September 21, 2016') {\n\t{dialog.Object}.setValue('Day','Thursday<br>September 22, 2016' );\n\t}\n\t\n\t%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}Set Date\">\n>\n>\n<flagRunSynchronously=.F.>\n"
             },
             {
-                "actionGuid": "9dfa23a4-9b88-4554-aec9-5576d5f9a0c2 ",
-                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$web.panel.layout'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Panel Actions.{T=4}{I:'a5_vertical_line'}Go back\">\n<action=\"Panel Actions.\">\n<icon=\"$$web.panel.layout\">\n<isCommentedOut=.F.>\n<comment=\"Go back\">\n<builder=\"a5ajs_Dialog_PanelActions(v,wf,pv,dlg_mode)\">\n<metaData=<<%str%\n<panelAction=\"Navigate\">\n<navigationDirection=\"Previous\">\n<panelNavigatorName=\"PANELNAVIGATOR_1\">\n<panelName=\"\">\n<panelPart=\"Body\">\n<jsvarname=\"var1\">\n<panelcardIframeURL=\"\">\n<withAnimation=.T.>\n<jsvarnameWidth=\"var_width\">\n<jsvarnameHeight=\"var_height\">\n<panelContainerNavOrLayout=\"\">\n<scrollX=\"0\">\n<scrollY=\"0\">\n<panelShowHidePart=\"Header\">\n<panelShowHideAction=\"Hide\">\n%str%>\n<javascriptAttribute=\"{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Previous');\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n<[2]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"Update Date\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str1%\n<inlineJavascript=<<%str%\n\nif ({dialog.Object}.getValue('Day') == 'September 22, 2016') {\n\t{dialog.Object}.setValue('Day','September 21, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'September 23, 2016') {\n\t{dialog.Object}.setValue('Day','September 22, 2016' );\n\t}%str%>\n%str1%>\n<javascriptAttribute=<<%str%\n\nif ({dialog.Object}.getValue('Day') == 'September 22, 2016') {\n\t{dialog.Object}.setValue('Day','September 21, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'September 23, 2016') {\n\t{dialog.Object}.setValue('Day','September 22, 2016' );\n\t}%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}Update Date\">\n>\n>\n<flagRunSynchronously=.F.>\n"
+                "actionGuid": "9dfa23a4-9b88-4554-aec9-5576d5f9a0c2  ",
+                "scriptMetaData": "<a_ajs<[1]<display=\"{I:'$$web.panel.layout'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Panel Actions.{T=4}{I:'a5_vertical_line'}Go back\">\n<action=\"Panel Actions.\">\n<icon=\"$$web.panel.layout\">\n<isCommentedOut=.F.>\n<comment=\"Go back\">\n<builder=\"a5ajs_Dialog_PanelActions(v,wf,pv,dlg_mode)\">\n<metaData=<<%str%\n<panelAction=\"Navigate\">\n<navigationDirection=\"Previous\">\n<panelNavigatorName=\"PANELNAVIGATOR_1\">\n<panelName=\"\">\n<panelPart=\"Body\">\n<jsvarname=\"var1\">\n<panelcardIframeURL=\"\">\n<withAnimation=.T.>\n<jsvarnameWidth=\"var_width\">\n<jsvarnameHeight=\"var_height\">\n<panelContainerNavOrLayout=\"\">\n<scrollX=\"0\">\n<scrollY=\"0\">\n<panelShowHidePart=\"Header\">\n<panelShowHideAction=\"Hide\">\n%str%>\n<javascriptAttribute=\"{dialog.object}.panelNavigate('PANELNAVIGATOR_1','Previous');\">\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n>\n<[2]<action=\"Inline-Javascript\">\n<icon=\"a5_new_xbasic_script\">\n<isCommentedOut=.F.>\n<comment=\"Update Date\">\n<builder=\"a5ajs_Inline(v,dlg_mode,wf)\">\n<metaData=<<%str1%\n<inlineJavascript=<<%str%\n\nif ({dialog.Object}.getValue('Day') == 'Thursday<br>September 22, 2016') {\n\t{dialog.Object}.setValue('Day','Wednesday<br>September 21, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'Friday<br>September 23, 2016') {\n\t{dialog.Object}.setValue('Day','Thursday<br>September 22, 2016' );\n\t}%str%>\n%str1%>\n<javascriptAttribute=<<%str%\n\nif ({dialog.Object}.getValue('Day') == 'Thursday<br>September 22, 2016') {\n\t{dialog.Object}.setValue('Day','Wednesday<br>September 21, 2016' );\n\t}\n\nif ({dialog.Object}.getValue('Day') == 'Friday<br>September 23, 2016') {\n\t{dialog.Object}.setValue('Day','Thursday<br>September 22, 2016' );\n\t}%str%>\n<Javascriptdeclarations_row=\"\">\n<Javascriptdeclarations_global=\"\">\n<xbasicFunctions=\"\">\n<display=\"{I:'a5_new_xbasic_script'}{F=Tahoma,10}{C=Dark Blue,White}{B=Blue White,Dark Blue}Inline-Javascript{T=4}{I:'a5_vertical_line'}Update Date\">\n>\n>\n<flagRunSynchronously=.F.>\n"
             },
             {
                 "actionGuid": "e7da4242-627b-4657-ab22-169c713feeff",
